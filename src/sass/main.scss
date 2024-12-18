@@ -1,0 +1,64 @@
+/* ==========  Variables, Mixins, Fonts, Media Queries  ========== */
+@import 'config/mixins';
+@import 'config/reset';
+@import 'config/vars';
+@import 'config/media-query';
+@import 'config/font'; 
+
+/* ==========  Bootstrap - 5 ========== */
+
+/* ==========  Global  ========== */
+@import 'config/base';
+
+/* ==========  Partials  ========== */
+@import 'partial/grid';
+@import 'partial/helper';
+@import 'partial/label';
+@import 'partial/header';
+@import 'partial/footer';
+
+/* ==========  Typography  ========== */
+@import 'typography/heading';
+@import 'typography/paragraph';
+
+/* ==========  Forms  ========== */
+@import 'components/form/placeholder'; 
+
+/* ==========  Components  ========== */
+@import 'components/blockquote';
+@import 'components/box';
+@import 'components/container';
+@import 'components/hr';
+@import 'components/iframe';
+@import 'components/section';
+@import 'components/cookie-modal';
+@import 'components/newsletter';
+@import 'components/hero-slider';
+@import 'components/integrations';
+@import 'components/why-us';
+@import 'components/slider-block';
+@import 'components/detail-modal';
+@import 'components/references';
+@import 'components/swiper-slide';
+@import 'components/breadcrumb';
+@import 'components/about-block';
+@import 'components/counter-section';
+@import 'components/mission-section';
+@import 'components/history-section';
+@import 'components/s-s-s';
+@import 'components/hero-block';
+@import 'components/business-section';
+@import 'components/career';
+@import 'components/career-form';
+@import 'components/news-section';
+@import 'components/text-section';
+@import 'components/e-performance';
+@import 'components/references-section';
+@import 'components/contact-page';
+@import 'components/form-modal';
+@import 'components/video-modal';
+@import 'components/back-top-top';
+@import 'components/search-result';
+@import 'components/error';
+// @import 'components/table';
+  

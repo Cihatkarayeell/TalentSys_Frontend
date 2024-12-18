@@ -1,0 +1,26 @@
+.container {
+  display: block;
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  @include bigger-than-xxl{
+    max-width: 172rem;
+  }
+  @media (max-width:1300px) {
+    margin: 0 4rem;
+    width: auto;
+  }
+  @include mini{
+    margin: 0 2.5rem;
+  }
+}
+.alt-container{
+  max-width: 84.2rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+

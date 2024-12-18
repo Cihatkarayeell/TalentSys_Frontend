@@ -1,0 +1,64 @@
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Arka planı karartmak için */
+    justify-content: center;
+    align-items: center;
+    animation: slideDown 0.5s ease forwards;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 400ms ease, visibility 400ms ease;
+    iframe{
+        height: 100%;
+    }
+    .modal-content {
+      background-color: white;
+      border-radius: .5rem;
+      width: 84.7rem;
+      height: 47rem;
+      max-width: 84.7rem;
+      text-align: center;
+      box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.3);
+      transform: translateY(-10%); 
+      transition: transform 0.5s ease;
+      @include sm{
+        height: 60%;
+        max-width: 90%;
+      }
+      @include mini{
+        height: 22%;
+        max-width: 85%;
+        width: 100%;
+      }
+      .close {
+        position: absolute;
+        top: -2.5rem;
+        right: -2.5rem;
+        cursor: pointer;
+      }
+    }
+    &.show{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .modal.show .modal-content {
+    transform: translateY(0); 
+  }
+  
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  

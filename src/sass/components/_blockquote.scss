@@ -1,0 +1,61 @@
+blockquote {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0.5em 0 0.5em 1.5em;
+  font-style: italic;
+  border-left: var(--border-2-width) solid var(--color-text-muted);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+#our-clients-section{
+  width: 100%;
+  overflow: hidden;
+
+  .swiper{
+      overflow: unset;
+  }
+
+  .swiper-wrapper{
+      transition-timing-function: linear;
+  }
+
+  .swiper-slide{
+      width: unset !important;
+  }
+
+  .btn-huge{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4.5rem;
+
+      @include md {
+          gap: 0 1.6rem;
+      }
+      
+      @include bigger-than-md {
+          gap: 0 3.2rem;
+      }
+      
+  }
+}
+
+.client-card{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .4rem;
+  width: 14.2rem;
+  height: 11.5rem;
+
+  img{
+      width: auto;
+      height: auto;
+      max-width: 90%;
+      max-height: 90%;
+  }
+}

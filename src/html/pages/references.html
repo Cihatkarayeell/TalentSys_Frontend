@@ -1,0 +1,405 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="detail-modal" id="modal-1">
+    <div class="detail-block">
+        <div class="modal-content">
+            <div class="text">
+                <div class="date">07.12.2024</div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut sint dignissimos asperiores architecto aliquam, tempora harum minima doloribus impedit!</div>
+                <div class="video-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H0aB_zLn5ic?si=No6VienTzep-c6vx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+            </div>
+            <div class="img">
+                <img src="./img/card/card-img-2.png" alt="">
+            </div>
+        </div>
+        <button class="close-modal" id="close-news-detail">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.868 19.992C0.644 19.992 0.42 19.9041 0.252 19.7362C-0.084 19.4004 -0.084 18.8487 0.252 18.5049L18.516 0.251849C18.852 -0.0839496 19.404 -0.0839496 19.748 0.251849C20.084 0.587648 20.084 1.13932 19.748 1.48311L1.484 19.7362C1.316 19.9041 1.092 19.992 0.868 19.992Z" fill="black"/>
+                    <path d="M19.124 19.9918C18.9 19.9918 18.676 19.9039 18.508 19.736L0.252 1.49092C-0.084 1.15512 -0.084 0.603455 0.252 0.259661C0.588 -0.0761371 1.14 -0.0761371 1.484 0.259661L19.748 18.5127C20.084 18.8485 20.084 19.4002 19.748 19.744C19.58 19.9119 19.356 19.9998 19.132 19.9998L19.124 19.9918Z" fill="black"/>
+                </svg>                        
+        </button>
+    </div>
+</div>
+<section class="hero" id="statik-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/business-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>Stratejinizi çalışanlarınız ile paylaşın.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Statik</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<div class="container references-title">
+    <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+        <h1>Referanslar</h1>
+    </div>
+</div>
+<section class="references-section" id="references-page-block">
+    <div class="reference-slider-box">
+        <div class="references-text-slider">
+            <div class="swiper mySwiper-references">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“2019 yılından bu yana TalentSys ile çalışıyoruz. Gerek tanışma süreçleri gerekse iş birlikteliğimizin başlangıcından sonra kolay ulaşım, hızlı çözüm ve geliştirme faaliyetlerinde bize sundukları hizmetlerden memnuniyet duyuyoruz. 2000’e yakın çalışanımıza verdiğimiz bu hizmetin hem sade hem de anlaşılır olması bizler için çok önemli. Bu kapsamda yaptığımız talepler çok hızlı bir şekilde karşılanıyor ve yerine getiriliyor. Perakendenin değişen dünyasında bizi yeniliklerden haberdar etmeleri ve pys sistemi dışında sundukları dijital çözümler her zaman ilgimizi çekmiş ve çekmeye devam etmektedir. Uzun yıllar kendileri ile çalışmayı ve beraber gelişmeyi umut ediyoruz.”</p>
+                        </div>
+                        <div class="name d-flex flex-column align-items-center title">
+                            <span>Işılay Okay</span>
+                            <span>Kiğılı</span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“TalentPayroll ile iş birliği yaparak Teknik Bordro süreçlerimizde dış kaynak hizmeti almaya karar verdik. Bizler için en düşündürücü ve endişe verici konu geçiş süreciydi ancak firma yetkililerinin verdiği destek ve özverili çalışmaları sayesinde bu süreci tahmin ettiğimizden çok daha kısa bir sürede ve hatasız olarak tamamladık, bu konuda tekrar kendilerine teşekkür etmek isterim. TalentPayroll’u tercih ederek sadece Teknik Bordro Danışmanlığı konusunda hizmet almıyor bütünsel bir İK hizmeti alıyoruz. Çalışanlarımızın tüm özlük işlemlerini, izin yönetimini mobil ve web platformlar üzerinden yürütebildiğimiz gibi çalışanlarımız ihtiyaç duydukları tüm belgelere cep telefonlarından kolaylıkla ulaşarak temin edebiliyorlar.”</p>
+                        </div>
+                        <div class="name d-flex align-items-center title">
+                            <span>E. Zümrüt Erdem</span>
+                            <span>Özberk</span>
+                        </div>
+                        <div class="title job">
+                            <span>
+                                Dem İlaç / İnsan Kaynakları & Kurumsal İletişim Direktörü
+                            </span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“2019 yılından bu yana TalentSys ile çalışıyoruz. Gerek tanışma süreçleri gerekse iş birlikteliğimizin başlangıcından sonra kolay ulaşım, hızlı çözüm ve geliştirme faaliyetlerinde bize sundukları hizmetlerden memnuniyet duyuyoruz. 2000’e yakın çalışanımıza verdiğimiz bu hizmetin hem sade hem de anlaşılır olması bizler için çok önemli. Bu kapsamda yaptığımız talepler çok hızlı bir şekilde karşılanıyor ve yerine getiriliyor. Perakendenin değişen dünyasında bizi yeniliklerden haberdar etmeleri ve pys sistemi dışında sundukları dijital çözümler her zaman ilgimizi çekmiş ve çekmeye devam etmektedir. Uzun yıllar kendileri ile çalışmayı ve beraber gelişmeyi umut ediyoruz.”</p>
+                        </div>
+                        <div class="name d-flex align-items-center title">
+                            <span>Işılay Okay</span>
+                            <span>Kiğılı</span>
+                        </div>
+                        <div class="title job">
+                            <span>
+                                Dem İlaç / İnsan Kaynakları & Kurumsal İletişim Direktörü
+                            </span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“2019 yılından bu yana TalentSys ile çalışıyoruz. Gerek tanışma süreçleri gerekse iş birlikteliğimizin başlangıcından sonra kolay ulaşım, hızlı çözüm ve geliştirme faaliyetlerinde bize sundukları hizmetlerden memnuniyet duyuyoruz. 2000’e yakın çalışanımıza verdiğimiz bu hizmetin hem sade hem de anlaşılır olması bizler için çok önemli. Bu kapsamda yaptığımız talepler çok hızlı bir şekilde karşılanıyor ve yerine getiriliyor. Perakendenin değişen dünyasında bizi yeniliklerden haberdar etmeleri ve pys sistemi dışında sundukları dijital çözümler her zaman ilgimizi çekmiş ve çekmeye devam etmektedir. Uzun yıllar kendileri ile çalışmayı ve beraber gelişmeyi umut ediyoruz.”</p>
+                        </div>
+                        <div class="name d-flex flex-column align-items-center title">
+                            <span>Işılay Okay</span>
+                            <span>Kiğılı</span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-layout">
+                <div class="swiper-button-prev-references">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="white"/>
+                        <path d="M23.5264 30L13.0001 20L23.5264 10" stroke="#A6A6A6" stroke-width="2" stroke-linecap="square"/>
+                    </svg>                            
+                </div>
+                <div class="swiper-button-next-references">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="white"/>
+                        <path d="M16.4736 10L26.9999 20L16.4736 30" stroke="#A6A6A6" stroke-width="2" stroke-linecap="square"/>
+                    </svg>                            
+                </div>
+            </div>
+    </div>
+    <div class="references-boxes">
+        <div class="references-item-wrap">
+            <a href="#" class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <svg width="134" height="50" viewBox="0 0 134 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="133.333" height="50" fill="url(#pattern0_4019_2938)"/>
+                        <defs>
+                        <pattern id="pattern0_4019_2938" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_4019_2938" transform="scale(0.005 0.0133333)"/>
+                        </pattern>
+                        <image id="image0_4019_2938" width="200" height="75" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                        
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem </p>
+                    </div>
+                </div> 
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

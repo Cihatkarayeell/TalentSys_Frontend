@@ -1,0 +1,77 @@
+#s-s-s{
+    width: 100%;
+    padding-top: 4.8rem;
+    .accordion{
+        padding-top: 4.5rem;
+        margin-bottom: 9rem;
+        .accordion-item{
+            border: .1rem solid #D9D9D9;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 1.2rem;
+        }
+        .accordion-button{
+            font-size: 2rem;
+            line-height: 2.3rem;
+            color: var(--color-secondary);
+            @include regular;
+            padding: 2.3rem 3rem 2.2rem 2rem;
+            align-items: center;
+            @include sm{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                padding: 2rem;
+            }
+            &:after{
+                display: none;
+            }
+            .arrow-icon{
+                margin-right: 1.5rem;
+            }
+            span{
+                max-width: calc(100% - 7rem);
+            }
+            .plus-icon{
+                margin-left: auto;
+                width: 2.1rem;
+                height: 2.1rem;
+                svg line{
+                    transition: 400ms ease;
+                }
+            }
+            &:focus{
+                box-shadow: none;
+            }
+            &:not(.collapsed){
+                background-color: transparent;
+                box-shadow: none;
+                color: #0079C1;
+                .plus-icon{
+                    svg{
+                        line{
+                            &:first-of-type{
+                                opacity: 0;
+                                visibility: hidden;
+                                transform: translateY(-1rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .accordion-body{
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: var(--color-secondary);
+            @include light;
+            padding-left: 5.5rem;
+            padding-bottom: 3.1rem;
+            padding-top: 0;
+            @include sm{
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                padding-bottom: 2.1rem;
+            }
+        }
+    }
+}

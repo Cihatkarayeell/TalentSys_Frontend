@@ -1,0 +1,11 @@
+iframe {
+  display: block;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  margin: 0 0 1em 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

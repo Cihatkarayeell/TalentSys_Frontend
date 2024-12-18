@@ -1,0 +1,197 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        <div class="icon">
+            <img src="./img/icon/modal-icon.svg" alt="">
+        </div>
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Your message has been successfully sent. We will contact you very soon!
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<section class="hero" id="career-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/career-backg.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>1990'dan beri...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Kurumsal</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Kariyer</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<section class="career-block" id="careeer-block">
+    <div class="container">
+        <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+            <h1>Kariyer</h1>
+        </div>
+        <div class="img-card-section">
+            <div class="img">
+                <img src="./img/card/career-card.png" alt="">
+            </div>
+            <div class="text">
+                <div class="title">
+                    <h3>
+                        TalentSys’de Kariyer
+                    </h3>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+                <div class="title">
+                    <h3>
+                        TalentSys’de Kariyer
+                    </h3>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+                <div class="title">
+                    <h3>
+                        TalentSys’de Kariyer
+                    </h3>
+                </div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <section class="divider"></section>
+    </div>
+</section>
+<section class="section-career-form">
+    <div class="container">
+        <div class="heading-2 light position-relative m-b-3 md bottom-line">
+            <h2>Başvuru Formu</h2>
+        </div>
+        <form action="#">
+            <div class="contact-inputs form-element">
+                <div class="input-layout">
+                    <div class="input-group">
+                        <label for="name">ADI</label>
+                        <input type="text" id="name" placeholder="Adınız">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <label for="surname">SOYADI</label>
+                        <input type="text" id="surname" placeholder="Soyadınız">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <label for="mail">E-POSTA</label>
+                        <input type="mail" id="mail" placeholder="E-Posta Adresiniz">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">TELEFON</label>
+                        <input type="tel" id="phone" placeholder="Telefon Numaranız">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                </div>
+                <div class="input-layout">
+                    <div class="input-group file">
+                        <label for="upload-file">CV</label>
+                        <a href="javascript:void(0);" class="intext">
+                            <span class="upload-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 10.577V1.927L4.17 4.257L3.462 3.539L7 0L10.539 3.539L9.831 4.258L7.5 1.927V10.577H6.5ZM1.616 14C1.15533 14 0.771 13.846 0.463 13.538C0.155 13.23 0.000666667 12.8453 0 12.384V9.961H1V12.384C1 12.538 1.064 12.6793 1.192 12.808C1.32 12.9367 1.461 13.0007 1.615 13H12.385C12.5383 13 12.6793 12.936 12.808 12.808C12.9367 12.68 13.0007 12.5387 13 12.384V9.961H14V12.384C14 12.8447 13.846 13.229 13.538 13.537C13.23 13.845 12.8453 13.9993 12.384 14H1.616Z" fill="#938F8F"/>
+                                </svg>                                
+                            </span> 
+                            <span class="upload-text" id="file-name"> <div class="strong">Dosya seçin</div> (PDF or DOC)</span> 
+                        </a>
+                        <input type="file" id="upload-file" class="file-input" accept=".pdf, .doc, .docx">
+                    </div>
+                    <div class="input-group message-group">
+                        <label for="message">MESAJ</label>
+                        <input type="text" id="message" placeholder="Mesajınız">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="checkbox-group">
+                        <a href="javascipt:();" class="checkbox-item">
+                            <input type="checkbox" id="gdpr">
+                            <div class="box">
+                                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                                </svg>                            
+                            </div>
+                            <label for="gdpr">Kullanım Koşullarını okudum ve kabul ediyorum.</label>
+                        </a>
+                        <a href="javascript:void(0);" class="checkbox-item">
+                            <input type="checkbox" id="privacy">
+                            <div class="box">
+                                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                                </svg>                            
+                            </div>
+                            <label for="privacy">Gizlilik Politikasını okudum ve kabul ediyorum.</label>
+                        </a>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit">GÖNDER</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

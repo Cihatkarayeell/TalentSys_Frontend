@@ -1,0 +1,87 @@
+#history{
+    width: 100%;
+    height: 49.6rem;
+    background: linear-gradient(90deg, rgba(0,121,193,1) 0%, rgba(62,69,178,.4) 100%);
+    padding-top: 4rem;
+    @include mini{
+        height: 100%;
+    }
+    .heading-2{
+        color: var(--color-body);
+    }
+    .button-layout{
+        width: max-content;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 0 3.5rem;
+        margin-bottom: 4.1rem;
+        margin-top: 3.7rem;
+        .swiper-button-prev-history,
+        .swiper-button-next-history{
+            transition: opacity 400ms ease;
+            cursor: pointer;
+        }
+        .swiper-button-disabled{
+            opacity: .3;
+        }
+        @include mini{
+            margin-bottom: 2.5rem;
+            margin-top: 2.5rem;
+        }
+    }
+    .swiper{
+        overflow: visible;
+        @include mini{
+            margin-bottom: 4.8rem;
+        }
+        .swiper-slide{
+            &:nth-child(1){
+                .icon-ball{
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 100%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 300vw;
+                        height: .1rem;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .title.date{
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        color: #ffffff;
+        @include semibold;
+        width: 100%;
+        @include line-clamp(1);
+        margin-bottom: 1.4rem;
+        height: 2.8rem;
+        max-height: 2.8rem;
+        max-width: calc(100% - 2rem);
+    }
+    .icon-ball{
+        background-color: #00AEEF;
+        border-radius: 50%;
+        border: .1rem solid #ffffff;
+        min-width: 2rem;
+        max-width: 2rem;
+        min-height: 2rem;
+        max-height: 2rem;
+        margin-bottom: 1.4rem;
+        position: relative;
+        
+    }
+    .desc{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: #ffffff;
+        @include light;
+        text-align: left;
+        padding-right: 3rem;
+    }
+}

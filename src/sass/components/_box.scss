@@ -1,0 +1,27 @@
+.box {
+  display: block;
+  width: 100%;
+  padding: 1em;
+}
+.card-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 1rem;
+  span{
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      color: #000000;
+      @include medium;
+  }
+}
+.card-link-hover{
+  .icon{
+    transition: transform 400ms ease;
+  }
+  &:hover{
+    .icon{
+      transform: translateX(.5rem);
+    }
+  }
+}

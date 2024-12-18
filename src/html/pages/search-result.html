@@ -1,0 +1,150 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="detail-modal" id="modal-1">
+    <div class="detail-block">
+        <div class="modal-content">
+            <div class="text">
+                <div class="date">07.12.2024</div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut sint dignissimos asperiores architecto aliquam, tempora harum minima doloribus impedit!</div>
+                <div class="video-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H0aB_zLn5ic?si=No6VienTzep-c6vx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+            </div>
+            <div class="img">
+                <img src="./img/card/card-img-2.png" alt="">
+            </div>
+        </div>
+        <button class="close-modal" id="close-news-detail">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.868 19.992C0.644 19.992 0.42 19.9041 0.252 19.7362C-0.084 19.4004 -0.084 18.8487 0.252 18.5049L18.516 0.251849C18.852 -0.0839496 19.404 -0.0839496 19.748 0.251849C20.084 0.587648 20.084 1.13932 19.748 1.48311L1.484 19.7362C1.316 19.9041 1.092 19.992 0.868 19.992Z" fill="black"/>
+                    <path d="M19.124 19.9918C18.9 19.9918 18.676 19.9039 18.508 19.736L0.252 1.49092C-0.084 1.15512 -0.084 0.603455 0.252 0.259661C0.588 -0.0761371 1.14 -0.0761371 1.484 0.259661L19.748 18.5127C20.084 18.8485 20.084 19.4002 19.748 19.744C19.58 19.9119 19.356 19.9998 19.132 19.9998L19.124 19.9918Z" fill="black"/>
+                </svg>                        
+        </button>
+    </div>
+</div>
+<section class="hero" id="search-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/business-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+    </div>
+</section>
+<section class="section">
+    <div class="search-result">
+        <div class="container">
+            <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+                <h1>Arama Sonuçları</h1>
+            </div>
+            <div class="title">
+                <h3> <strong>“Keyword”</strong> ile ilgili <strong>5</strong> sonuç bulundu.</h3>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <span>Page title lorem ipsum dolor</span>
+                      <div class="icon">
+                        <img src="./img/icon/right-chevron.svg" alt="">
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet,</p>
+                        <a href="#">https://talentsys.com/page-name-url</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <span>Page title lorem ipsum dolor</span>
+                      <div class="icon">
+                        <img src="./img/icon/right-chevron.svg" alt="">
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet,</p>
+                        <a href="#">https://talentsys.com/page-name-url</a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span>Page title lorem ipsum dolor</span>
+                      <div class="icon">
+                        <img src="./img/icon/right-chevron.svg" alt="">
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet,</p>
+                        <a href="#">https://talentsys.com/page-name-url</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <span>Page title lorem ipsum dolor</span>
+                        <div class="icon">
+                            <img src="./img/icon/right-chevron.svg" alt="">
+                          </div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                Lorem ipsum dolor sit amet,</p>
+                            <a href="#">https://talentsys.com/page-name-url</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <span>Page title lorem ipsum dolor</span>
+                        <div class="icon">
+                            <img src="./img/icon/right-chevron.svg" alt="">
+                          </div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                Lorem ipsum dolor sit amet,</p>
+                            <a href="#">https://talentsys.com/page-name-url</a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

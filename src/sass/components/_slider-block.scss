@@ -1,0 +1,164 @@
+.slider-block{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .swiper{
+        overflow: visible;
+    }
+    .subtitle{
+        max-width: calc(100% - 9.1rem);
+        @include mini{
+            @include line-clamp(2);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .img-card{
+        width: auto;
+        height: 100%;
+        .card-img{
+            height: 20rem;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: flex;
+            }
+        }
+        .card-text-block{
+            background-color:#F7FBFD;
+            padding: 2.4rem 2.1rem 1.2rem 2.1rem;
+            height: 18.4rem;
+            .card-title{
+                font-size: 2rem;
+                line-height: 2.3rem;
+                color: var(--color-primary);
+                @include regular;
+                text-align: left;
+            }
+            .btn{
+                padding: 0;
+                width: max-content;
+                position: relative;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    bottom: -.1rem;
+                    left: 0;
+                    width: 100%;
+                    background-color: var(--color-primary);
+                    transform: scale(0);
+                    transition: transform 500ms ease;
+                    height: .1rem;
+                }
+            }
+        }
+        &:hover{
+            .btn{
+                &:after{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    .swiper-buttons{
+        display: flex;
+        align-items: center;
+        gap: 0 1rem;
+        position: absolute;
+        right: 7.8rem;
+        bottom: calc(100% + 3.2rem);
+        z-index: 2;
+        @include bigger-than-xxl{
+            right: 0;
+        }
+        @include md{
+            right: 0;
+            gap: 0 .9rem;
+        }
+        .swiper-button-next-news,
+        .swiper-button-prev-news{
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            cursor: pointer;
+            @include mini{
+                min-width: 3.5rem;
+                min-height: 3.5rem;
+                max-width: 3.5rem;
+                max-height: 3.5rem;
+            }
+            *{
+                width:100%;
+                height: 100%;
+            }
+        }
+    }
+    &.news{
+        .news-block{
+            margin-bottom: 5.7rem;
+            @include mini{
+                margin-bottom: 3.3rem;
+            }
+        }
+    }
+    .img-card{
+        max-height: 38.4rem;
+        max-width: 32.8rem;
+    }
+    &.products{
+        .news-block{
+            margin-bottom: 8rem;
+            @include md{
+                margin-bottom: 4.8rem;
+            }
+        }
+        .img-card{
+            max-height: 49.6rem;
+            max-width: 32.8rem;
+            width: 100%;
+            height: 100%;
+            .card-img{
+                height: 20rem;
+                max-height: 20rem;
+            }
+            .card-text-block{
+                padding: 2.4rem 2.5rem 1.6rem 2.4rem;
+                height: 29.6rem;
+                max-height: 29.6rem;
+                .card-title{
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                }
+                .card-desc{
+                    margin-top: 1rem;
+                    text-align: left;
+                    p,span{
+                        font-family:'Work Sans', sans-serif;
+                        font-size: 1.6rem;
+                        color: var(--color-secondary);
+                        @include light;
+                        line-height:1.9rem;
+                        text-align: left;
+                    }
+                }
+                .btn{
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    color: var(--color-primary);
+                    @include medium;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 1rem;
+                    padding: 0;
+                    .icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }   
+    }
+}

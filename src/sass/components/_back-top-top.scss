@@ -1,0 +1,15 @@
+.top-button{
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 400ms ease, visibility 400ms ease;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+  }

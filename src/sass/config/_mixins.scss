@@ -1,0 +1,33 @@
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-fluid {
+  @include img-fluid;
+}
+
+// Appearance
+@mixin appearance($value) {
+  -moz-appearance: $value;
+  -webkit-appearance: $value;
+  appearance: $value;
+}
+
+@mixin line-clamp($lines-to-show) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+ 

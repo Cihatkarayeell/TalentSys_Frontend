@@ -1,0 +1,234 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        <div class="icon">
+            <img src="./img/icon/modal-icon.svg" alt="">
+        </div>
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Your message has been successfully sent. We will contact you very soon!
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
+<section class="hero" id="news-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/business-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>Stratejinizi çalışanlarınız ile paylaşın.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Ürünler</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">e-Performans</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<section class="e-performance-block" id="e-performans-block">
+    <div class="container">
+        <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+            <h1>Kariyer</h1>
+        </div>
+        <div class="img-card-section">
+            <div class="img">
+                <img src="./img/card/performance.png" alt="">
+            </div>
+            <div class="text">
+                <div class="title">
+                    <h3>
+                        Veritabanı ve temel insan kaynakları sistemi bağımsız çalışabilen, tamamen web tabanlı, çoklu dil yapısını destekleyen ve 1 gün içerisinde kuruma adapte edilebilen performans değerlendirme ve yönetim sistemi.
+                    </h3>
+                </div>
+                <div class="desc">
+                    <p>Kurum stratejisinin tüm organizasyona yayılarak bireysel bazda her bir çalışana indirgenmesini ve performans değerlendirme ve yönetim süreçlerinizi online yönetmenizi sağlayan modüldür.</p>
+                    <ul>
+                        <li>Aylık ya da Dönem bazlı Hedef değerlendirme,</li>
+                        <li>Anlık Hedef değerlendirme ve takip,</li>
+                        <li>Yetkinlik bazlı değerlendirme,</li>
+                        <li>Yetkinlik bazlı eğitim ihtiyaç analizi,</li>
+                        <li>360 derece değerlendirme,</li>
+                        <li>Balanced scorecard metodolojisi,</li>
+                        <li>Proje performansı değerlendirme</li>
+                        <li>2 ve 6 aylık değerlendirme</li>
+                        <li>Teknik yeterlilik değerlendirme</li>
+                        <li>Onboarding</li>
+                        <li>Potansiyelin Değerlendirilmesi</li>
+                        <li>Kariyer Planlama</li>
+                        <li>Gelişim Planlama ve takip</li>
+                        <li>Yedekleme</li>
+                        <li>İzleme (Düşük Performans gösteren çalışanların gelişim takibi)</li>
+                        <li>Stajyer Performansı değerlendirme</li>
+                        <li>Geri Bildirim</li>
+                        <li>Yönetici Günlüğü (Günce)</li>
+                        <li>Yönlendirme</li>
+                        <li>OKR (Objectives and Key Results)</li>
+                    </ul>
+                </div>
+                <div class="desc p-b-0">
+                    <p>dahil olmak üzere tüm dönem bazlı veya dinamik performans değerlendirme ve yönetimi metodolojilerini ve süreçlerini desteklemekte ve online bir platformda yönetilmesini sağlamaktadır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+</section>
+<section class="text-section">
+    <div class="container">
+        <div class="d-flex-flex-column">
+            <div class="heading-2 md bottom-line light position-relative m-b-3">
+                <h2>Başlık 1</h2>
+            </div>
+            <div class="desc">
+                <p>Esnek yapısı sayesinde performans yönetim süreçlerinizi çok kolay, hızlı ve verimli bir şekilde tanımlamanızı ve yönetmenizi sağlar. Form tasarım ve içerikleri, süreç tanımları ve iş akışları, ağırlık ve puanlama ayarları parametrik yapısı sayesinde son derece kolay ve hızlı şekilde tamamlanmaktadır. Süreç boyunca form doluluk oranları anlık ve değerlendirici tipi bazında takip edilebilmekte ve hatırlatma mesajları otomatik veya istenilen zamanda gönderilebilmektedir.</p>
+                <p>Performans yönetim sürecinizi online bir platforma taşımanızı sağlamakla beraber geçmişe dönük tüm performans verilerine ulaşılmasını sağlayan yapısı sayesinde çok önemli bir kurumsal bilgi geçmişine de erişim imkanı yaratır. Yöneticiler ve çalışanlar performans değerlendirme geçmişleri, güçlü ve gelişime açık yönleri ve raporlara rahatlıkla ulaşabilmektedir. Sayısız standart rapor ve grafik analiz üretebilmekle birlikte esnek raporlama yapısı sayesinde kuruma özel raporlar rahatlıkla tanımlanabilmektedir.</p>
+                <p>E-Performans üzerinde oluşturulan formlar ile dönemsel performans değerlendirme süreçleriniz ile birlikte eğitim ihtiyaçları, kariyer ve gelişim planları, yedekleme gibi süreçler için gerekli veriler de rahatlıkla toplanarak farklı insan kaynakları süreçleri için raporlanabilmektedir.</p>
+                <p>TalentSYS e-Performans hedef ve yetkinlik performans yönetimi modülü, sadece yöneticilerin ekiplerinin hedeflerini ve hedef kapsamındaki performansını görmesini sağlamamakta, izin verildiği taktirde çalışanın kendisine ait ve ilgili olabilecek ekip arkadaşlarının hedeflerini görebilmekte, ölçümleyebilmekte veya fikir ve öneride bulunabilmektedir. Böylece çalışan kendi hedefini, şirketin genel hedefine bağlayabiliyor, performansını ölçebiliyor ve gerekli düzenlemeleri yapabiliyor. Tüm bunları gerçekleştirdiğiniz TalentSYS’nin e-Performans yönetim sistemi OKR (Objectives and Key Results) metodolojisini de içinde barındırıyor.</p>
+            </div>
+            <div class="heading-2 md bottom-line light position-relative m-b-3">
+                <h2>Başlık 2</h2>
+            </div>
+            <div class="desc">
+                <p>amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href="#">laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</a> exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</li>
+                    <li>ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</li>
+                </ul>
+                <p>amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href="#">laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</a> exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+            <div class="video-img glass-effect">
+                <div class="img">
+                    <div class="img-backdrop">
+                        <img src="./img/card/blur-img.png" alt="">
+                    </div>
+                </div>
+                <button class="play-button videoModalBtn">
+                    <div class="icon">
+                        <img src="./img/icon/play-icon.svg" alt="">
+                    </div>
+                    <span>Videouyu İzleyin</span>
+                </button>
+            </div>
+            <div class="btn-layout">
+                <a href="#" target="_blank" class="btn">
+                    <span>Daha Fazla Bilgi Alın (Dış Link)</span>
+                    <div class="icon">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.0011 13.4826C8.90548 13.3869 8.85176 13.2571 8.85176 13.1217C8.85176 12.9864 8.90548 12.8566 9.0011 12.7609L14.2566 7.50456L0.510652 7.50456C0.375219 7.50456 0.245332 7.45076 0.149566 7.355C0.0538003 7.25923 -2.95541e-07 7.12934 -2.89621e-07 6.99391C-2.83701e-07 6.85848 0.0538003 6.72859 0.149566 6.63282C0.245332 6.53706 0.375219 6.48326 0.510652 6.48326L14.2566 6.48326L9.0011 1.22694C8.9109 1.13014 8.8618 1.0021 8.86413 0.869808C8.86646 0.737514 8.92006 0.611291 9.01362 0.51773C9.10718 0.42417 9.2334 0.370577 9.36569 0.368243C9.49799 0.365909 9.62602 0.415016 9.72283 0.505217L15.8507 6.63305C15.9463 6.7288 16 6.85859 16 6.99391C16 7.12923 15.9463 7.25903 15.8507 7.35477L9.72283 13.4826C9.62708 13.5782 9.49729 13.6319 9.36196 13.6319C9.22664 13.6319 9.09685 13.5782 9.0011 13.4826Z" fill="white"/>
+                        </svg>                            
+                    </div>
+                </a>
+                <button class="btn">
+                    <span>Ürün Broşürünü İndirin (PDF)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter m-b-9">
+    <div class="container"> 
+        <div class="newsletter-block">
+            <div class="header">
+                <div class="title heading-2 bottom-line md light position-relative m-b-3">
+                    <h2>
+                        Bültenimize Katılın
+                    </h2>
+                </div>
+                <div class="subtitle">Hemen bültenimize abone olun, en yeni haber ve etkinlikleri ilk siz keşfedin!</div>
+            </div>
+            <form action="#" class="form-element">
+                <div class="input-layout form-element">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Adın">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="surname" placeholder="Soyadı">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="mail" id="mail" placeholder="E-Posta">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="submit-button">
+                        <button>KAYIT OL</button>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <a href="javascipt:();" class="checkbox-item">
+                        <input type="checkbox" id="gdpr">
+                        <div class="box">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                            </svg>                            
+                        </div>
+                        <label for="gdpr">Kullanım Koşullarını okudum ve kabul ediyorum.</label>
+                    </a>
+                    <a href="javascript:void(0);" class="checkbox-item">
+                        <input type="checkbox" id="privacy">
+                        <div class="box">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                            </svg>                            
+                        </div>
+                        <label for="privacy">Gizlilik Politikasını okudum ve kabul ediyorum.</label>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

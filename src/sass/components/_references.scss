@@ -1,0 +1,203 @@
+#references{
+    width: 100%;
+    height: 82.4rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4.8rem;
+    .backdrop{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(94,113,132,1) 0%, rgba(62,69,178,.3) 100%);
+        background: linear-gradient(180deg, rgba(94,113,132,1) 0%, rgba(62,69,178,.7) 100%);
+        .references-img-box{
+            padding-top: 4rem;
+            flex-direction: column;
+            display: flex;
+            @include mini{
+                padding-top: 2.4rem;
+            }
+        }
+        .references-box{
+            background-color: var(--color-body);
+            width: 100%;
+            height: 9.6rem;
+            display: flex;
+            align-items: center;
+            border-radius: .6rem;
+            gap: 0 3rem;
+            overflow: hidden;
+            .marguee{
+                animation-name: marqueeImgAnimation;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                white-space: nowrap;
+                align-items: center;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 0 5rem;
+                animation-duration: 50s;
+                animation-direction: normal;
+                @include bigger-than-xxl{
+                    animation-duration: 70s;
+                }
+            }
+            .reference-item{
+                height: 5rem;
+                width: 13rem;
+                max-width: 13.3rem;
+                display: flex;
+                transition: all .5s;
+                filter: grayscale(1);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                }
+                &:hover{
+                    filter: grayscale(0);
+                }
+            }
+            
+        } 
+    }
+    .button-layout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 1rem;
+        position: absolute;
+        bottom: 8.8rem;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%);
+        .swiper-button-prev-references,
+        .swiper-button-next-references{
+            cursor: pointer;
+        }
+    }
+    .link-layout{
+        position: absolute;
+        bottom: 3.1rem;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        transform: translateX(-50%);
+        gap: 0 2.5rem;
+        z-index: 3;
+        width: 100%;
+        .link{
+            color: #ffffff;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            @include medium;
+            .icon{
+                margin-left: 1rem;
+            }
+        }
+        @include sm{
+            flex-direction: column;
+            gap: .7rem 0;
+            bottom: 2.5rem;
+        }
+    }
+    .references-text-slider{
+        z-index: 2;
+        position: relative;
+        padding-top: 4.6rem;
+        @include sm{
+            padding-top: 2.6rem;
+        }
+        .swiper-slide{
+            opacity: 0 !important;
+            visibility: hidden;
+            transition: all 400ms ease;
+        }
+        .swiper-fade .swiper-slide-active{
+            opacity: 1 !important;
+            visibility: visible;
+        }
+        .slider-page{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .img{
+                margin-bottom: 3.5rem;
+                border: .3rem solid #ffffff;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                }
+            }
+            .desc{
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                color: var(--color-body);
+                text-align: center;
+                padding: 0 11rem;
+                @include regular;
+                @include md{
+                    padding: 0 ;
+                }
+                @include sm{                    
+                    @include line-clamp(7);
+                    padding: 0;
+                }
+            }
+            .title{
+                font-size: 1.4rem;
+                @include bold;
+                line-height: 1.6rem;
+                color: var(--color-body);
+                gap: 0 .5rem;
+                text-align: center;
+                span{
+                    display: block;
+                }
+            }
+            .btn{
+                padding: 1rem 1.5rem;
+                border-radius: .5rem;
+                border: .1rem solid #ffffff;
+                display: flex;
+                align-items: center;
+                gap: 0 .1rem;
+                font-size: 1.4rem;
+                @include semibold;
+                line-height: 1.6rem;
+                color: #ffffff;
+                margin-top: 2rem;
+                &:hover{
+                    background-color: #2388CB;
+                }
+            }
+        }
+    }
+    .references-bottom-svg{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50% , .3rem);
+        width: 100%;
+        height: 100%;
+        max-height: 49rem;
+    }
+}
+
+@keyframes marqueeImgAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-50%);
+    }
+}

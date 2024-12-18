@@ -1,0 +1,198 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        <div class="icon">
+            <img src="./img/icon/modal-icon.svg" alt="">
+        </div>
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Your message has been successfully sent. We will contact you very soon!
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<section class="hero" id="statik-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/business-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>30+ yıldır 100’den fazla markanın tercihi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">İletişim</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="container">
+        <div class="d-flex flex-column">
+            <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+                <h1>İletişim</h1>
+            </div>
+            <div class="contact-block">
+                <div class="info">
+                    <div class="title">
+                        <h3>TalentSys Danışmanlık Enformasyon Teknoloji San. A.Ş.</h3>
+                    </div>
+                    <div class="adress">
+                        <p>İkitelli OSB Mahallesi Demirciler Sanayi Sitesi Yolu YTÜ Teknopark Kat 1 No.10434306 Başakşehir, İstanbul, Türkiye</p>
+                    </div>
+                    <a href="#" target="_blank" class="btn">Haritada Göster</a>
+                    <div class="tel-numbers">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.1262 5.77084C3.12177 5.68887 3.10123 5.60858 3.06577 5.53455C3.03031 5.46052 2.98061 5.39419 2.91952 5.33937C2.85843 5.28454 2.78713 5.24229 2.70971 5.21502C2.63229 5.18774 2.55025 5.17599 2.46828 5.18042C2.38632 5.18485 2.30602 5.20538 2.23199 5.24085C2.15796 5.27631 2.09164 5.32601 2.03681 5.3871C1.98199 5.44819 1.93973 5.51949 1.91246 5.59691C1.88519 5.67433 1.87343 5.75637 1.87786 5.83834L3.1262 5.77084ZM3.9312 2.57667C3.82175 2.69762 3.76393 2.85656 3.77007 3.01956C3.77622 3.18257 3.84584 3.33671 3.96408 3.44907C4.08233 3.56144 4.23981 3.62313 4.40291 3.62097C4.56602 3.6188 4.72181 3.55296 4.83703 3.4375L3.9312 2.57667ZM8.8862 16.51C8.9557 16.5548 9.03339 16.5853 9.11478 16.5999C9.19617 16.6144 9.27963 16.6127 9.36035 16.5948C9.44106 16.5768 9.51741 16.5431 9.58497 16.4954C9.65254 16.4478 9.70998 16.3872 9.75397 16.3172C9.79796 16.2472 9.82762 16.1691 9.84124 16.0876C9.85485 16.006 9.85215 15.9226 9.83329 15.8421C9.81443 15.7616 9.77979 15.6856 9.73137 15.6186C9.68294 15.5516 9.62171 15.4949 9.5512 15.4517L8.8862 16.51ZM12.5937 16.715C12.4314 16.6811 12.2622 16.713 12.1234 16.8038C11.9846 16.8946 11.8876 17.0368 11.8537 17.1992C11.8198 17.3615 11.8517 17.5307 11.9425 17.6694C12.0333 17.8082 12.1755 17.9052 12.3379 17.9392L12.5937 16.715ZM13.037 12.9533L13.4162 12.5533L12.5095 11.6925L12.1304 12.0925L13.037 12.9533ZM14.6654 12.385L16.257 13.3017L16.8812 12.2183L15.2887 11.3017L14.6654 12.385ZM16.5645 15.2017L15.3804 16.4475L16.287 17.3092L17.4704 16.0625L16.5645 15.2017ZM6.96537 13.2992C3.73537 9.89834 3.1937 7.02917 3.1262 5.77084L1.87786 5.83834C1.9612 7.38 2.61453 10.5333 6.05953 14.16L6.96537 13.2992ZM8.11203 7.76834L8.35037 7.51667L7.44453 6.65584L7.20537 6.9075L8.11203 7.76834ZM8.5387 4.38334L7.48787 2.8975L6.46703 3.61917L7.51703 5.105L8.5387 4.38334ZM7.65787 7.3375C7.50789 7.19296 7.3565 7.04989 7.2037 6.90834L7.20203 6.91L7.19953 6.9125L7.15787 6.96084C7.07627 7.06902 7.01163 7.18901 6.9662 7.31667C6.88453 7.54584 6.8412 7.84917 6.8962 8.2275C7.00453 8.97084 7.49203 9.97 8.76453 11.3108L9.6712 10.4492C8.4812 9.19667 8.18787 8.42584 8.13287 8.04584C8.1062 7.8625 8.13286 7.76667 8.1437 7.73584L8.15037 7.72L8.12703 7.75084L8.11203 7.76834L7.65787 7.3375ZM8.76453 11.31C10.0337 12.6467 10.992 13.1717 11.7229 13.2908C12.0987 13.3517 12.4029 13.3025 12.6329 13.2117C12.7607 13.162 12.8795 13.0916 12.9845 13.0033L13.0137 12.975L13.0254 12.9633L13.0312 12.9583L13.0337 12.9558L13.0345 12.9542C13.0345 12.9542 13.0362 12.9533 12.5829 12.5225C12.1295 12.0925 12.1304 12.0917 12.1304 12.0908L12.132 12.09L12.1337 12.0875L12.1387 12.0833L12.1779 12.0483C12.1856 12.0439 12.1843 12.0442 12.1737 12.0492C12.157 12.0558 12.082 12.0825 11.9237 12.0567C11.5887 12.0017 10.8654 11.7067 9.6712 10.4492L8.76453 11.31ZM7.48787 2.8975C6.64287 1.7025 4.95286 1.5 3.9312 2.57667L4.83703 3.4375C5.27287 2.97917 6.04037 3.015 6.46703 3.61917L7.48787 2.8975ZM15.3804 16.4475C15.1479 16.6925 14.9054 16.8242 14.6687 16.8475L14.7912 18.0908C15.4137 18.03 15.9179 17.6983 16.287 17.3092L15.3804 16.4475ZM8.35037 7.51667C9.15703 6.6675 9.2137 5.33917 8.5387 4.38334L7.51787 5.105C7.86953 5.6025 7.81537 6.26584 7.44453 6.65584L8.35037 7.51667ZM16.257 13.3017C16.9412 13.6958 17.0754 14.6642 16.5645 15.2017L17.4704 16.0625C18.5579 14.9175 18.2412 13.0017 16.8812 12.2183L16.257 13.3017ZM13.4162 12.5533C13.737 12.215 14.2379 12.1392 14.6654 12.385L15.2887 11.3017C14.3729 10.775 13.2387 10.9258 12.5095 11.6925L13.4162 12.5533ZM9.5512 15.4517C8.73203 14.9367 7.85953 14.24 6.96537 13.2992L6.05953 14.16C7.0212 15.1725 7.9737 15.9367 8.8862 16.51L9.5512 15.4517ZM14.6679 16.8475C13.9737 16.9081 13.2745 16.8634 12.5937 16.715L12.3379 17.9392C13.1433 18.1132 13.9705 18.1643 14.7912 18.0908L14.6679 16.8475Z" fill="#00AEEF"/>
+                            </svg>                            
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="tel:+90 212 217 07 00">+90 212 217 07 00</a>
+                            <a href="tel:+90 533 471 38 45">+90 533 471 38 45</a>
+                        </div>
+                    </div>
+                    <div class="mail">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0003 18.3334C8.84755 18.3334 7.76422 18.1145 6.75033 17.6767C5.73644 17.2389 4.85449 16.6453 4.10449 15.8959C3.35449 15.1464 2.76088 14.2645 2.32366 13.25C1.88644 12.2356 1.66755 11.1522 1.66699 10C1.66644 8.8478 1.88533 7.76446 2.32366 6.75002C2.76199 5.73558 3.3556 4.85363 4.10449 4.10419C4.85338 3.35474 5.73533 2.76113 6.75033 2.32335C7.76533 1.88558 8.84866 1.66669 10.0003 1.66669C11.152 1.66669 12.2353 1.88558 13.2503 2.32335C14.2653 2.76113 15.1473 3.35474 15.8962 4.10419C16.6451 4.85363 17.2389 5.73558 17.6778 6.75002C18.1167 7.76446 18.3353 8.8478 18.3337 10V11.2084C18.3337 12.0278 18.0525 12.7259 17.4903 13.3025C16.9281 13.8792 16.237 14.1672 15.417 14.1667C14.9309 14.1667 14.4725 14.0625 14.042 13.8542C13.6114 13.6459 13.2503 13.3472 12.9587 12.9584C12.5559 13.3611 12.1009 13.6634 11.5937 13.865C11.0864 14.0667 10.5553 14.1672 10.0003 14.1667C8.84755 14.1667 7.86505 13.7603 7.05283 12.9475C6.2406 12.1347 5.83422 11.1522 5.83366 10C5.8331 8.8478 6.23949 7.8653 7.05283 7.05252C7.86616 6.23974 8.84866 5.83335 10.0003 5.83335C11.152 5.83335 12.1348 6.23974 12.9487 7.05252C13.7625 7.8653 14.1687 8.8478 14.167 10V11.2084C14.167 11.5695 14.285 11.875 14.5212 12.125C14.7573 12.375 15.0559 12.5 15.417 12.5C15.7781 12.5 16.0767 12.375 16.3128 12.125C16.5489 11.875 16.667 11.5695 16.667 11.2084V10C16.667 8.13891 16.0212 6.56252 14.7295 5.27085C13.4378 3.97919 11.8614 3.33335 10.0003 3.33335C8.13921 3.33335 6.56283 3.97919 5.27116 5.27085C3.97949 6.56252 3.33366 8.13891 3.33366 10C3.33366 11.8611 3.97949 13.4375 5.27116 14.7292C6.56283 16.0209 8.13921 16.6667 10.0003 16.6667H14.167V18.3334H10.0003ZM10.0003 12.5C10.6948 12.5 11.285 12.257 11.7712 11.7709C12.2573 11.2847 12.5003 10.6945 12.5003 10C12.5003 9.30558 12.2573 8.7153 11.7712 8.22919C11.285 7.74308 10.6948 7.50002 10.0003 7.50002C9.30588 7.50002 8.7156 7.74308 8.22949 8.22919C7.74338 8.7153 7.50033 9.30558 7.50033 10C7.50033 10.6945 7.74338 11.2847 8.22949 11.7709C8.7156 12.257 9.30588 12.5 10.0003 12.5Z" fill="#00AEEF"/>
+                            </svg>                            
+                        </div>
+                        <a href="mailto:info@talentsys.com.tr">info@talentsys.com.tr</a>
+                    </div>
+                    <section class="counters" id="counters">
+                        <div class="counters-wrap">
+                            <div class="counter-item">
+                                <div class="number">
+                                    <span>100</span><span>+</span>
+                                </div>
+                                <div class="title">Müşteri</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="number">
+                                    <span>80</span><span>B+</span>
+                                </div>
+                                <div class="title">Kullanıcı</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="number">
+                                    <span>30</span><span>+</span>
+                                </div>
+                                <div class="title">Yıl Deneyim</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="number">
+                                    <span>20</span><span>+</span>
+                                </div>
+                                <div class="title">Sektör</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="contact-form">
+                    <div class="heading-2 light md bottom-line position-relative">
+                        <h2>Bize Yazın</h2>
+                    </div>
+                    <form id="contactForm" class="form-element" >
+                      <div class="form-group">
+                        <div class="form-control">
+                          <label for="firstName">ADI</label>
+                          <input type="text" id="firstName" placeholder="Adınız"/>
+                          <div class="input-badge">Lütfen boş bırakmayın!</div>
+                        </div>
+                        <div class="form-control">
+                          <label for="lastName">SOYADI</label>
+                          <input type="text" id="lastName" placeholder="Soyadınız"/>
+                          <div class="input-badge">Lütfen boş bırakmayın!</div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-control">
+                          <label for="email">E-POSTA</label>
+                          <input type="email" id="email" placeholder="E-Posta Adresiniz"/>
+                          <div class="input-badge">Lütfen boş bırakmayın!</div>
+                        </div>
+                        <div class="form-control">
+                          <label for="phone">TELEFON</label>
+                          <input type="tel" id="phone" placeholder="Telefon numaranız"/>
+                          <div class="input-badge">Lütfen boş bırakmayın!</div>
+                        </div>
+                      </div>
+                  
+                      <div class="form-control">
+                        <label for="message">MESAJ</label>
+                        <textarea id="message" rows="4" placeholder="Mesajınız"></textarea>
+                      </div>
+                      <div class="checkbox-group">
+                        <a href="javascipt:();" class="checkbox-item">
+                            <input type="checkbox" id="gdpr">
+                            <div class="box">
+                                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                                </svg>                            
+                            </div>
+                            <label for="gdpr">Kullanım Koşullarını okudum ve kabul ediyorum.</label>
+                        </a>
+                        <a href="javascript:void(0);" class="checkbox-item">
+                            <input type="checkbox" id="privacy">
+                            <div class="box">
+                                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                                </svg>                            
+                            </div>
+                            <label for="privacy">Gizlilik Politikasını okudum ve kabul ediyorum.</label>
+                        </a>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit">GÖNDER</button>
+                    </div>
+                    </form>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

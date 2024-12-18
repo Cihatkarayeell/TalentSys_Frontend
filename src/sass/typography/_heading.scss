@@ -1,0 +1,48 @@
+.heading-1 {
+  font-size: 4.2rem;
+  line-height: 4.9rem;
+  font-weight: 600;
+  @include sm{
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+  @include mini{
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+  }
+}
+.heading-2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+.heading-3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+}
+.heading-4 {
+  font-size: 1.4em;
+}
+.heading-5 {
+  font-size: 1.2em;
+}
+.heading-6 {
+  font-size: 1em;
+}
+h1,h2,h3,h4,h5{
+  margin: 0;
+  padding: 0;
+}
+.subtitle{
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #231f20;
+  font-weight: 300;
+  padding-top: 1.3rem;
+  margin-bottom: 2.8rem;
+  @include mini{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+}

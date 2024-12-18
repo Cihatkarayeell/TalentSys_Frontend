@@ -1,0 +1,92 @@
+.hero{
+    width: 100%;
+    height: 40rem;
+    @include mini{
+        height: 20rem;
+    }
+    .hero-backdrop{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .hero-bottom-block{
+            margin-top: auto;
+            width: 100%;;
+            height: 10rem;
+            background-color: rgb(250, 250, 250,.8);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @include mini{
+                justify-content: center;
+                height: 7rem;
+            }
+            .text{
+                margin-right: 3.5rem;
+                @include mini{
+                    margin-right: 0;
+                    width: 100%;
+                    padding: 0 2.5rem;
+                }
+                .brand-text{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 1rem;
+                    @include mini{
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        gap: .5rem 1rem;
+                    }
+                    span{
+                        &:nth-child(1),
+                        &:nth-child(2){
+                            font-size: 2.6rem;
+                            line-height: 3rem;
+                            color: #0079C1;
+                            @include semibold;
+                            @include mini{
+                                font-size: 2.4rem;
+                                line-height: 2.6rem;
+                                @include medium;
+                            }
+                        }
+                        &:nth-child(3){
+                            font-size: 2.2rem;
+                            line-height: 3rem;
+                            color: #231F20;
+                            @include light;
+                            @include mini{
+                                font-size: 1.8rem;
+                                line-height: 2rem;
+                                @include line-clamp(1);
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*
+    &#about-hero{
+        .hero-backdrop{
+            @include mini{
+                background-position: 65rem center !important; 
+            }
+        }
+    }
+    &#business-hero{
+        .hero-backdrop{
+            @include mini{
+                background-position: -5rem center !important; 
+            }
+        }
+    }
+    &#news-hero{
+        .hero-backdrop{
+            @include mini{
+                background-position: -5rem center !important; 
+            }
+        }
+    }
+    */
+}

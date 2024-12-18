@@ -1,0 +1,443 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        <div class="icon">
+            <img src="./img/icon/modal-icon.svg" alt="">
+        </div>
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Your message has been successfully sent. We will contact you very soon!
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<section class="hero" id="about-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/about-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>1990'dan beri...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Kurumsal</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Hakkımızda</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<section class="about-block" id="about-block">
+    <div class="container">
+        <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+            <h1>Hakkımızda</h1>
+        </div>
+        <div class="about-card">
+            <div class="img">
+                <img src="./img/card/about-card.png" alt="">
+            </div>
+            <div class="text">
+                <div class="title">
+                    <h3>
+                        TalentSys, 1990 yılından itibaren insan kaynakları yönetimi konusunda kurumların sağ kolu olacak teknoloji çözümleri üretmektedir.
+                    </h3>
+                </div>
+                <div class="desc">
+                    <p>Türkiye’nin ilk insan kaynakları yönetim sistemlerinden birisi olan Inka’yı geliştirmiştir ve mevcut bilgi birikimi, uzmanlardan alınan danışmanlıklar ve müşteri talepleri doğrultusunda geliştirmeye devam etmektedir. TalentSys çözümleri modüler ve parametrik yapıları sayesinde birçok kurumsal firmaya 2.000’i aşkın fonksiyon ile hizmet vermektedir. Geliştirilen tüm uygulama ve çözümler kurumların insan kaynağını en iyi şekilde yönetmesini, insan kaynakları süreçlerinin birim yöneticileri ile paylaşılarak ortak süreçler haline getirilmesini ve insan kaynakları departmanlarının operasyondan kazandıkları zamanı stratejik kararlar üzerinde harcamasını hedeflemektedir.</p>
+                </div>
+                <div class="desc">
+                    <p>Kurumsal pazarın taleplerine tek bir yazılım kaynak kodu ile cevap verebilmek adına kurulduğu günden bu yana geliştirdiği yüksek parametrik yapısı çözümlerin kurumlara adaptasyonunu hızlandırmakta ve insan kaynakları profesyonellerinin operasyona ayırdıkları vakti azaltmasını sağlamaktadır.</p>
+                </div>
+                <div class="desc">
+                    <p>TalentSys yalnızca yazılım üreten bir yapıda değil, insan kaynakları departmanlarının mevcut yatırımlarını koruyarak çözüm aradıkları alanlarda çözüm üreten bir yapıya sahiptir. Aynı zamanda tüm uygulamaları ve çözümleri tamamen servis şeklinde sunmakta ve bu yapısı ile kurumlara esneklik ve maliyet avantajı yaratmaktadır.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="divider"></section>
+<section class="counters" id="counters">
+    <div class="container">
+        <div class="counters-wrap">
+            <div class="counter-item">
+                <div class="number">
+                    <span class="count" data-target="100">100</span><span>+</span>
+                </div>
+                <div class="title">Müşteri</div>
+            </div>
+            <div class="counter-item">
+                <div class="number">
+                    <span class="count" data-target="80">80</span><span>B+</span>
+                </div>
+                <div class="title">Kullanıcı</div>
+            </div>
+            <div class="counter-item">
+                <div class="number">
+                    <span class="count" data-target="30">30</span><span>+</span>
+                </div>
+                <div class="title">Yıl Deneyim</div>
+            </div>
+            <div class="counter-item">
+                <div class="number">
+                    <span class="count" data-target="20">20</span><span>+</span>
+                </div>
+                <div class="title">Sektör</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="divider"></section>
+<section class="missions" id="ourMission">
+    <div class="container">
+        <div class="mission-block">
+            <div class="heading-2 position-relative light m-b-3 bottom-line md">
+                <h2>Misyon ve Vizyon</h2>
+            </div>
+            <div class="mission-wrap">
+                <div class="item">
+                    <div class="icon">
+                        <img src="./img/icon/mission.svg" width="50" height="50" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="title">
+                            <h2>Misyonumuz</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Kurumların mevcut insan kaynakları yatırımlarını koruyarak çözüm arayışı içerisinde oldukları alanlarda entegre veya modüler bazda çözümler üretmek ve insan kaynakları süreçlerinin birim yöneticileri ve çalışanlar ile paylaşılmasını sağlayan teknolojiler sağlamak.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="./img/icon/vision.svg" width="53" height="50" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="title">
+                            <h2>Vizyonumuz</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Modüler bazda uyarlama ve kullanımı kolay insan kaynakları süreçleri ve uygulamaları geliştirerek bölgesel bazda önemli bir oyuncu olmak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="history" id="history">
+    <div class="container">
+        <div class="history-slider">
+            <div class="heading-2 position-relative light m-b-3 bottom-line md">
+                <h2>Tarihçe</h2>
+            </div>
+            <div class="button-layout">
+                <div class="swiper-button-prev-history">
+                    <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21L2 11.5L12 2" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                    </svg>                            
+                </div>
+                <div class="swiper-button-next-history">
+                    <svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L12 11.5L2 21" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                    </svg>                            
+                </div>
+            </div>
+            <div class="swiper mySwiper-history">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <div class="date title">
+                                <span>1990</span>
+                            </div>
+                            <div class="icon-ball"></div>
+                            <div class="desc">
+                                <p>Prosis ismi ile faaliyete geçildi.</p>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="date title">
+                                <span>1991</span>
+                            </div>
+                            <div class="icon-ball"></div>
+                            <div class="desc">
+                                <p>Inka İnsan Kaynakları uygulaması kullanıma alındı. İlk kurulumlar başarı ile tamamlandı.</p>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="date title">
+                                <span>1995</span>
+                            </div>
+                            <div class="icon-ball"></div>
+                            <div class="desc">
+                                <p>SFS Grup ile birleşme.</p>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="date title">
+                                <span>1996</span>
+                            </div>
+                            <div class="icon-ball"></div>
+                            <div class="desc">
+                                <p>Tüm modüller Windows’a taşındı.</p>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="date title">
+                                <span>1999</span>
+                            </div>
+                            <div class="icon-ball"></div>
+                            <div class="desc">
+                                <p>Türkiye’nin ilk online anket yönetimi uygulaması AnketEvi müşterilerin kullanımına sunuldu. Türkiye’nin ilk kariyer sitesi e-cvbank.com açıldı.</p>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="date title">
+                                <span>1999</span>
+                            </div>
+                            <div class="icon-ball"></div>
+                            <div class="desc">
+                                <p>Türkiye’nin ilk online anket yönetimi uygulaması AnketEvi müşterilerin kullanımına sunuldu. Türkiye’nin ilk kariyer sitesi e-cvbank.com açıldı.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-s-s" id="s-s-s">
+    <div class="container">
+        <div class="heading-2 bottom-line md light position-relative m-b-3">
+            <h2>
+                Sıkça Sorulan Sorular
+            </h2>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="arrow-icon">
+                        <img src="./img/icon/right-arrow.svg" alt="">                      
+                    </div>
+                    <span>Ürünler Türkçe dışında dillerde kullanılabiliyor mu?</span>
+                  <div class="plus-icon">
+                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="10.5" y1="1" x2="10.5" y2="21" stroke="#0079C1" stroke-linecap="round"/>
+                        <line x1="20.5" y1="11" x2="0.5" y2="11" stroke="#0079C1" stroke-linecap="round"/>
+                    </svg>                        
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <span>Tabi ki, yerli ve yabancı birçok firma ve uygulama ile hem yetenek yönetimi hem de özlük ve bordro süreçleri için entegre çalışabilmekteyiz.</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="arrow-icon">
+                            <img src="./img/icon/right-arrow.svg" alt="">                      
+                        </div>
+                            <span>Faklı insan kaynakları veya ERP uygulamaları ile entegrasyon sağlamak mümkün mü?</span>
+                        <div class="plus-icon">
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="10.5" y1="1" x2="10.5" y2="21" stroke="#0079C1" stroke-linecap="round"/>
+                                <line x1="20.5" y1="11" x2="0.5" y2="11" stroke="#0079C1" stroke-linecap="round"/>
+                            </svg>                        
+                        </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Tabi ki, yerli ve yabancı birçok firma ve uygulama ile hem yetenek yönetimi hem de özlük ve bordro süreçleri için entegre çalışabilmekteyiz.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="arrow-icon">
+                        <img src="./img/icon/right-arrow.svg" alt="">                      
+                      </div>
+                        <span>Çözümler bulut tabanlı mıdır?</span>
+                      <div class="plus-icon">
+                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10.5" y1="1" x2="10.5" y2="21" stroke="#0079C1" stroke-linecap="round"/>
+                            <line x1="20.5" y1="11" x2="0.5" y2="11" stroke="#0079C1" stroke-linecap="round"/>
+                        </svg>                        
+                      </div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ipsa, optio a quasi obcaecati maxime harum molestias porro quod architecto iusto quo quisquam corrupti enim corporis tenetur suscipit excepturi commodi culpa. Doloremque, voluptates totam. Placeat possimus ea sapiente unde?</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="arrow-icon">
+                        <img src="./img/icon/right-arrow.svg" alt="">                      
+                      </div>
+                        <span>Fiyatlama modeliniz hakkında bilgi verir misiniz?</span>
+                      <div class="plus-icon">
+                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10.5" y1="1" x2="10.5" y2="21" stroke="#0079C1" stroke-linecap="round"/>
+                            <line x1="20.5" y1="11" x2="0.5" y2="11" stroke="#0079C1" stroke-linecap="round"/>
+                        </svg>                        
+                      </div>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Tabi ki, yerli ve yabancı birçok firma ve uygulama ile hem yetenek yönetimi hem de özlük ve bordro süreçleri için entegre çalışabilmekteyiz.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="arrow-icon">
+                        <img src="./img/icon/right-arrow.svg" alt="">                      
+                      </div>
+                        <span>Referanslarınız ile görüşebilir miyiz?</span>
+                      <div class="plus-icon">
+                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10.5" y1="1" x2="10.5" y2="21" stroke="#0079C1" stroke-linecap="round"/>
+                            <line x1="20.5" y1="11" x2="0.5" y2="11" stroke="#0079C1" stroke-linecap="round"/>
+                        </svg>                        
+                      </div>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Tabi ki, yerli ve yabancı birçok firma ve uygulama ile hem yetenek yönetimi hem de özlük ve bordro süreçleri için entegre çalışabilmekteyiz.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="arrow-icon">
+                        <img src="./img/icon/right-arrow.svg" alt="">                      
+                      </div>
+                        <span>Çözümleri modüler bazda kullanabilir miyiz?</span>
+                      <div class="plus-icon">
+                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10.5" y1="1" x2="10.5" y2="21" stroke="#0079C1" stroke-linecap="round"/>
+                            <line x1="20.5" y1="11" x2="0.5" y2="11" stroke="#0079C1" stroke-linecap="round"/>
+                        </svg>                        
+                      </div>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat ipsa, optio a quasi obcaecati maxime harum molestias porro quod architecto iusto quo quisquam corrupti enim corporis tenetur suscipit excepturi commodi culpa. Doloremque, voluptates totam. Placeat possimus ea sapiente unde?</span>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter m-b-9">
+    <div class="container"> 
+        <div class="newsletter-block">
+            <div class="header">
+                <div class="title heading-2 bottom-line md light position-relative m-b-3">
+                    <h2>
+                        Bültenimize Katılın
+                    </h2>
+                </div>
+                <div class="subtitle">Hemen bültenimize abone olun, en yeni haber ve etkinlikleri ilk siz keşfedin!</div>
+            </div>
+            <form action="#" class="form-element">
+                <div class="input-layout form-element">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Adın">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="surname" placeholder="Soyadı">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="mail" id="mail" placeholder="E-Posta">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="submit-button">
+                        <button>KAYIT OL</button>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <a href="javascipt:();" class="checkbox-item">
+                        <input type="checkbox" id="gdpr">
+                        <div class="box">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                            </svg>                            
+                        </div>
+                        <label for="gdpr">Kullanım Koşullarını okudum ve kabul ediyorum.</label>
+                    </a>
+                    <a href="javascript:void(0);" class="checkbox-item">
+                        <input type="checkbox" id="privacy">
+                        <div class="box">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                            </svg>                            
+                        </div>
+                        <label for="privacy">Gizlilik Politikasını okudum ve kabul ediyorum.</label>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

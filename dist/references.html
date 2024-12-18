@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr" class="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Front end Starter Kit</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="keywords" content="..." />
+  <meta name="description" content="..." />
+
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:title" content="..." />
+  <meta property="og:description" content="..." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+
+  <link rel="canonical" href="">
+
+  <link rel="image_src" href="">
+
+  <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap&v=fd4d005e2558a6ef6fbbefe923f35648" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?v=fd4d005e2558a6ef6fbbefe923f35648" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css?v=fd4d005e2558a6ef6fbbefe923f35648" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/main.css?v=fd4d005e2558a6ef6fbbefe923f35648">
+  <script src="./js/lib.js?v=fd4d005e2558a6ef6fbbefe923f35648" type="module" defer></script>
+  <script src="./js/main.js?v=fd4d005e2558a6ef6fbbefe923f35648" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?v=fd4d005e2558a6ef6fbbefe923f35648"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=fd4d005e2558a6ef6fbbefe923f35648" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-home">
+
+  
+  <header id="header">
+    <div class="header">
+        <div class="header-container">
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="brand-logo">
+                    <img src="./img/logo/nav-brand-logo.svg" alt="">
+                </a>
+                <div class="navbar-right-section m-l-auto">
+                    <div class="d-flex align-items-center navbar-right-buttons">
+                        <div class="search">
+                            <button class="search-button" id="searchButton">                                 
+                                <img src="./img/icon/search-icon.svg" alt="">
+                            </button>
+                            <div class="search-box" id="searchBox">
+                                <input type="text" placeholder="Arama" id="navSearch" enterkeyhint="search">
+                                <a href="#">
+                                    <div class="icon">
+                                        <img src="./img/icon/search-icon.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <button class="language-button active" id="languageEn">
+                                <span>EN</span>
+                            </button>
+                            <button class="language-button" id="languageTr">
+                                <span>TR</span>
+                            </button>
+                        </div>
+                        <button class="mobile-menu-button" id="menuOpenBtn">
+                            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="30" height="2" rx="1" fill="#0079C1"/>
+                                <rect y="9" width="30" height="2" rx="1" fill="#0079C1"/>
+                                <rect y="18" width="30" height="2" rx="1" fill="#0079C1"/>
+                            </svg>                                
+                        </button>
+                    </div>
+                    <div class="navbar-list" id="navbarList">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="active">
+                                    <span>ANA SAYFA</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>KURUMSAL</span>
+                                    <div class="icon">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800013 0.898224L4.99647 5.09468L9.20001 0.898224C6.88204 3.2162 3.11799 3.2162 0.800013 0.898224Z" fill="white"/>
+                                        </svg>                                                                                      
+                                    </div>
+                                </a>
+                                <div class="dropdown">
+                                    <div class="dropdown-body">
+                                        <ul>
+                                            <li>
+                                                <a href="about.html">Hakkımızda</a>
+                                            </li>
+                                            <li>
+                                                <a href="business-partners.html">İş Ortakları</a>
+                                            </li>
+                                            <li>
+                                                <a href="career.html">Kariyer</a>
+                                            </li>
+                                            <li>
+                                                <a href="news.html">Haberler</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>BLOG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>ÜRÜNLER</span>
+                                    <div class="icon">
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800013 0.898224L4.99647 5.09468L9.20001 0.898224C6.88204 3.2162 3.11799 3.2162 0.800013 0.898224Z" fill="white"/>
+                                        </svg>                                                                                      
+                                    </div>
+                                </a>
+                                <div class="dropdown">
+                                    <div class="dropdown-body">
+                                        <ul>
+                                            <li>
+                                                <a href="products.html">e-Performans</a>
+                                            </li>
+                                            <li>
+                                                <a href="products.html">TalentPayroll</a>
+                                            </li>
+                                            <li>
+                                                <a href="products.html">AnketEvi</a>
+                                            </li>
+                                            <li>
+                                                <a href="products.html">İnka.Net</a>
+                                            </li>
+                                            <li>
+                                                <a href="products.html">Feed-back</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="references.html">
+                                    <span>REFERANSLAR</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <span>İLETİŞİM</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="language">
+                            <button class="language-button active" id="languageEn">
+                                <span>EN</span>
+                            </button>
+                            <button class="language-button" id="languageTr">
+                                <span>TR</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="brand-logo">
+            <img src="./img/logo/nav-brand-logo.svg" alt="">
+        </a>
+        <button class="close-btn" id="menuCloseBtn">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.9548 21.9912C0.7084 21.9912 0.462 21.8945 0.2772 21.7098C-0.0924 21.3404 -0.0924 20.7336 0.2772 20.3554L20.3676 0.277034C20.7372 -0.0923446 21.3444 -0.0923446 21.7228 0.277034C22.0924 0.646412 22.0924 1.25325 21.7228 1.63142L1.6324 21.7098C1.4476 21.8945 1.2012 21.9912 0.9548 21.9912Z" fill="#0079C1"/>
+                <path d="M21.0364 21.9912C20.79 21.9912 20.5436 21.8945 20.3588 21.7098L0.2772 1.64021C-0.0924 1.27083 -0.0924 0.663996 0.2772 0.285823C0.6468 -0.0835555 1.254 -0.0835555 1.6324 0.285823L21.7228 20.3642C22.0924 20.7336 22.0924 21.3404 21.7228 21.7186C21.538 21.9033 21.2916 22 21.0452 22L21.0364 21.9912Z" fill="#0079C1"/>
+            </svg>                
+        </button>
+        <div class="mobile-menu-list">
+        </div>
+    </div>
+</header>
+
+  
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="detail-modal" id="modal-1">
+    <div class="detail-block">
+        <div class="modal-content">
+            <div class="text">
+                <div class="date">07.12.2024</div>
+                <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut sint dignissimos asperiores architecto aliquam, tempora harum minima doloribus impedit!</div>
+                <div class="video-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H0aB_zLn5ic?si=No6VienTzep-c6vx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores eaque, cum consectetur enim voluptatem ea sunt minus ad architecto atque, placeat blanditiis error delectus. Vero minima, ratione corporis maxime sequi hic pariatur nihil aut saepe, omnis quam deleniti fuga, quasi velit nam itaque quia sit quod tempore. Ad dolor explicabo qui aperiam labore voluptates facere corrupti maxime quae blanditiis.</div>
+            </div>
+            <div class="img">
+                <img src="./img/card/card-img-2.png" alt="">
+            </div>
+        </div>
+        <button class="close-modal" id="close-news-detail">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.868 19.992C0.644 19.992 0.42 19.9041 0.252 19.7362C-0.084 19.4004 -0.084 18.8487 0.252 18.5049L18.516 0.251849C18.852 -0.0839496 19.404 -0.0839496 19.748 0.251849C20.084 0.587648 20.084 1.13932 19.748 1.48311L1.484 19.7362C1.316 19.9041 1.092 19.992 0.868 19.992Z" fill="black"/>
+                    <path d="M19.124 19.9918C18.9 19.9918 18.676 19.9039 18.508 19.736L0.252 1.49092C-0.084 1.15512 -0.084 0.603455 0.252 0.259661C0.588 -0.0761371 1.14 -0.0761371 1.484 0.259661L19.748 18.5127C20.084 18.8485 20.084 19.4002 19.748 19.744C19.58 19.9119 19.356 19.9998 19.132 19.9998L19.124 19.9918Z" fill="black"/>
+                </svg>                        
+        </button>
+    </div>
+</div>
+<section class="hero" id="statik-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/business-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>Stratejinizi çalışanlarınız ile paylaşın.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Statik</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<div class="container references-title">
+    <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+        <h1>Referanslar</h1>
+    </div>
+</div>
+<section class="references-section" id="references-page-block">
+    <div class="reference-slider-box">
+        <div class="references-text-slider">
+            <div class="swiper mySwiper-references">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“2019 yılından bu yana TalentSys ile çalışıyoruz. Gerek tanışma süreçleri gerekse iş birlikteliğimizin başlangıcından sonra kolay ulaşım, hızlı çözüm ve geliştirme faaliyetlerinde bize sundukları hizmetlerden memnuniyet duyuyoruz. 2000’e yakın çalışanımıza verdiğimiz bu hizmetin hem sade hem de anlaşılır olması bizler için çok önemli. Bu kapsamda yaptığımız talepler çok hızlı bir şekilde karşılanıyor ve yerine getiriliyor. Perakendenin değişen dünyasında bizi yeniliklerden haberdar etmeleri ve pys sistemi dışında sundukları dijital çözümler her zaman ilgimizi çekmiş ve çekmeye devam etmektedir. Uzun yıllar kendileri ile çalışmayı ve beraber gelişmeyi umut ediyoruz.”</p>
+                        </div>
+                        <div class="name d-flex flex-column align-items-center title">
+                            <span>Işılay Okay</span>
+                            <span>Kiğılı</span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“TalentPayroll ile iş birliği yaparak Teknik Bordro süreçlerimizde dış kaynak hizmeti almaya karar verdik. Bizler için en düşündürücü ve endişe verici konu geçiş süreciydi ancak firma yetkililerinin verdiği destek ve özverili çalışmaları sayesinde bu süreci tahmin ettiğimizden çok daha kısa bir sürede ve hatasız olarak tamamladık, bu konuda tekrar kendilerine teşekkür etmek isterim. TalentPayroll’u tercih ederek sadece Teknik Bordro Danışmanlığı konusunda hizmet almıyor bütünsel bir İK hizmeti alıyoruz. Çalışanlarımızın tüm özlük işlemlerini, izin yönetimini mobil ve web platformlar üzerinden yürütebildiğimiz gibi çalışanlarımız ihtiyaç duydukları tüm belgelere cep telefonlarından kolaylıkla ulaşarak temin edebiliyorlar.”</p>
+                        </div>
+                        <div class="name d-flex align-items-center title">
+                            <span>E. Zümrüt Erdem</span>
+                            <span>Özberk</span>
+                        </div>
+                        <div class="title job">
+                            <span>
+                                Dem İlaç / İnsan Kaynakları & Kurumsal İletişim Direktörü
+                            </span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“2019 yılından bu yana TalentSys ile çalışıyoruz. Gerek tanışma süreçleri gerekse iş birlikteliğimizin başlangıcından sonra kolay ulaşım, hızlı çözüm ve geliştirme faaliyetlerinde bize sundukları hizmetlerden memnuniyet duyuyoruz. 2000’e yakın çalışanımıza verdiğimiz bu hizmetin hem sade hem de anlaşılır olması bizler için çok önemli. Bu kapsamda yaptığımız talepler çok hızlı bir şekilde karşılanıyor ve yerine getiriliyor. Perakendenin değişen dünyasında bizi yeniliklerden haberdar etmeleri ve pys sistemi dışında sundukları dijital çözümler her zaman ilgimizi çekmiş ve çekmeye devam etmektedir. Uzun yıllar kendileri ile çalışmayı ve beraber gelişmeyi umut ediyoruz.”</p>
+                        </div>
+                        <div class="name d-flex align-items-center title">
+                            <span>Işılay Okay</span>
+                            <span>Kiğılı</span>
+                        </div>
+                        <div class="title job">
+                            <span>
+                                Dem İlaç / İnsan Kaynakları & Kurumsal İletişim Direktörü
+                            </span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-page">
+                        <div class="img">
+                            <img src="./img/card/profile.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>“2019 yılından bu yana TalentSys ile çalışıyoruz. Gerek tanışma süreçleri gerekse iş birlikteliğimizin başlangıcından sonra kolay ulaşım, hızlı çözüm ve geliştirme faaliyetlerinde bize sundukları hizmetlerden memnuniyet duyuyoruz. 2000’e yakın çalışanımıza verdiğimiz bu hizmetin hem sade hem de anlaşılır olması bizler için çok önemli. Bu kapsamda yaptığımız talepler çok hızlı bir şekilde karşılanıyor ve yerine getiriliyor. Perakendenin değişen dünyasında bizi yeniliklerden haberdar etmeleri ve pys sistemi dışında sundukları dijital çözümler her zaman ilgimizi çekmiş ve çekmeye devam etmektedir. Uzun yıllar kendileri ile çalışmayı ve beraber gelişmeyi umut ediyoruz.”</p>
+                        </div>
+                        <div class="name d-flex flex-column align-items-center title">
+                            <span>Işılay Okay</span>
+                            <span>Kiğılı</span>
+                        </div>
+                        <button class="btn videoModalBtn">
+                            <div class="icon">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                            <span>Videoyu İzle</span>
+                        </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-layout">
+                <div class="swiper-button-prev-references">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="white"/>
+                        <path d="M23.5264 30L13.0001 20L23.5264 10" stroke="#A6A6A6" stroke-width="2" stroke-linecap="square"/>
+                    </svg>                            
+                </div>
+                <div class="swiper-button-next-references">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="white"/>
+                        <path d="M16.4736 10L26.9999 20L16.4736 30" stroke="#A6A6A6" stroke-width="2" stroke-linecap="square"/>
+                    </svg>                            
+                </div>
+            </div>
+    </div>
+    <div class="references-boxes">
+        <div class="references-item-wrap">
+            <a href="#" class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <svg width="134" height="50" viewBox="0 0 134 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="133.333" height="50" fill="url(#pattern0_4019_2938)"/>
+                        <defs>
+                        <pattern id="pattern0_4019_2938" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_4019_2938" transform="scale(0.005 0.0133333)"/>
+                        </pattern>
+                        <image id="image0_4019_2938" width="200" height="75" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABLCAIAAAC6Hl+/AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAyKADAAQAAAABAAAASwAAAABtHffXAAAsIElEQVR4Ae1cCXwURdbvayaTmRwkIQkkhCQQ7vu+5FZAAeUSEPRbRdHd9UIUEfFCZb1XxROVZXEVEEU+QZFTEeQGUQ6RK1wBEnJn7pme7u//qmY6Q4JovgV/yzIl9ryuevWq6tW/XlW9qo6o67oQCRENXGwNSBdbYEReRAOkgQiwIji4JBqIAOuSqDUiNAKsCAYuiQYiwLokao0IjQArgoFLooEIsC6JWiNCI8CKYOCSaCACrEui1ojQCLAiGLgkGogA65KoNSI0AqwIBi6JBiLAuiRqjQiNACuCgUuigQiwLolaI0IvHrB0ARe7dEETNOOCF2jSsCb4dT0AQhf89BYMGmMMvmoCZ2BpAYEuiXE5OksI5fk3f8Mvn4XTv0fshfnDUw2aE8YrL+V8kRpUQ1pjmuO6+j1VujBPlXL/f8w1EhJexMUDlkhiRV3Cf0w1mgbMiEJAEyRdFkVR01RRkENlA3MUp+sitAkISWAltTLkUaV0QUR+DdGUwDQeynvOb5WWV381YkCgSBLN7jaCZr+oA2GaB1bp0EvoF/wIPG8orupveKpBsyIoI7IbGYxIIwayoQaRWklsuggNBhN5xirPcGm/RiM/r0Y4g1FiFQI8nLlKvCGExxuiDKI6vxFz8YAFEEAxUJCG/2W8SBIJl+mB//GmAD/0j9QmEacgUXtENVgJXS+2l5V6nCSG4oFC8DPMMdQalQ4nwjXCFRRsNu8bJIvi3LlzMzMzBw8eDKTu2rWradPm7dt3PHjwIDMRqAMKChpO1LK61piMSkQapRucBsGTwl+RF5F4GpEgeCTiQaOaoqDZKxxDhl5fPzN77px/0hjjCAtxGkK4qHBphiiehGeVEM5cJcmo0nl5eKrBA4KXxQkjvopM47WywUbU/4/AuGc9xMyPqMEIyIJU5PaePFWYl1d08uApl8eJmqWnpqRkJDdpnJaeWIvjUBB8fkGRadDKTpd9d96h9NopaYl1TILCasK7PIi9C9TNaHklD+s0POrUSSssKAB6vlu/7p133l+4cD6Yx40b9/HHH58nV2X+Sqo6mxHDifBnZbZfoc5hhu2WAm+98fZ9990HSCXUTi48m8+7kOc+h5lF8Zjzyg5PukDGcLbzyvnNyN+UwDvvN+X8NgNggSlFlAKYCzXds2LbgcUbf/r8YEX56YLM/AKry66qKuyBKCuq2RyIjWlSP3VQ75a3jbs21hptwkIqgIVVIMZqgwFbuX9D54YtGifnWGUrrbYwSVA4P7aMFoaPJ2LnpgDGTxe6de6y9MtlimJqkJ3dvXv3BQs+Rnrvnn3AU70LKe/vCEZxnJe/VpdmVC9c5DnMkgY8dWzfISra4vP4u3XtyqZoDDOyneAMZ0YM5PAYnlpFfnhSeMbwSlbJwpOqRBrCjeI423mZw5MM+qJZrICgygImO2HVtr0vrNy37uBxvdxZ26HGOu2i6hJl6A//M31JsuLzKG5vQPZaklLH3thv6t3DUCGfHjBL8pny0+9u+bReQnzz1OZNUprVjo7lNtCocXUCWkAk9FhFO5SRplTKsfzLrzMy0lu1aQ36008Xd+3aNaNeOiWwVCLODVVFnZta5a0Ks1EfsFVJqpKRox/GHusqSdd27NzVsWPHgK7B2FevmCHKILg0/hr+NMqtwhle+q8lhcdXkRme/TfpiwYslFRQbn9n+YYZW3KFUp/oUWwAlr3A7Cv3QWmSCbpjY0gi20YQEyXNFO1yiH5HRusGr710b5P0ZJGto2et+cdez7EOdZs2S2jSrG7j5Oha1AHnN1hCaYl99erVMHgQjgBd8DarAc/1119fWFi44bv1NlvssBHDTSZj6yD8/PPPO7f/oCjKwGsHJCYmrl69Nj8/PyoqCnkDAT/kdO7cuUGDBlwaXr/7bsPx48eRio5v3rwpL2Lr1q379+9XFDNKGT/+ppSUFMSHd8zmzZsPHjyMunXr1q1ZsybYGUAUePDcsWPHz3v3gW7avEXH9u3yTp86eiQ3sXayvdzRrUdHj8ezfPkKt9uNGsLM+/1+i8UCIWlpabyIs2fPrlmzBrTJFIUSMRvEx8f27dvXZrMhkm9BUAoCXhct+uybb9acOXPGZDI1a9ZszJgxLVu25GwQjrwoq6KiAvUcNWqUzRaNJATekBUrVqB1MJ09e/bIzs424hnLBR/If1HCD8fzx766WLz3A/G+BcJtLwvXTc/o9pf6HW/J7HRHZpe76nf9S4Nud9fvendGj3vrd7svo8f99a+aXL/HlLTeD2V1n9q8xR31+t+37of9uob/Agu//7TdP29+ZO3f3t3y4fLDG/PtaFjg1yq5bt06o31cj6FXCap/ZsbTUC3+9e3b35BQUlICDPH4FStWIT4zM1sSZMw+Bn7NZvOQIUNcLhfP1bZte5Yk3X33vTzm+++/Z8XR2h+ppaXl6E6jCE5cdVUvnismJu7I4YNoBXqRJw0bNoz2LoI0aOAQxLz6ymuoNupQP4PQfOrUqVArKn+jo6PR8byUDz74IJTA60zDDsh+6KGHkB08QAmI9evXt2zZmq19K5smy/LYsWON2rpcnri4WryeLVq0Qq7wkJ4Ou055Z86caWQJZ/g1mipU48B8S7AMOnwJzEBsO5L3xOJNmwt96eYYq71QKPGkOByizylKMm2eyc7DHYUdIXpTEUzRkhiFWUpV4JFQArJellIn4az/pklv7jt5FrrOSqp7wlmeW3o0r+zk4eLDuwv3F7ucyB0sjJWI9vBqUx3QbtqBGhs6hYFGw+rKao2jemJkK2SNeACzYrHpEq3dTOTUEExmCyZpDHVs0Bi8BJ/P9+WXXw4degPPYo7COAanhkGPGIfDMWLkjXwJhBl28+aNtWrFIb6yVqx6rFDK5XBUDBg0RNV0dCoJ1IUok5kLtESDEKKiSCyceaYoesVeRjFRhflQoaoJAgzY54s/Gzl8FOh4WwyLw4Pko9qgYMZefvnlxx6djlxo42eLPu3Tp9fevbtZrcCDQN0NzC1cuLBN2/ZerxevgLsp2koSJH3fvj3jx99itAKpUWYUREVYzJUKRPxvhhoDizyZVAdIhp5QW9/uE6XvrPm5xG+WRIu/rNRZak8rdcQ7nbIcJehRxMIUpElRmmhCzoAQUBUxIJk00QKoYe0lBtSi2im1S0wTH50L5noJyTEVgYLSk/mO/JPuM4dKjh0sOuzRvBKQhQ6DQL7opjoIOTk5kyZNeuCBB7Bs4gXlNMx5aMqUOyfe2bZtW9h/YkJXKYqhL+gdr5AFAgGpEgYAjKIg3HP3PQsXftShQwfWB9Latav37/sZDCY5uMtJiK+FKsCYnS04g4nXarVs2rQJ8xQXzqWBHwRiqJQQOI4cPjx6FLBIAZGKGTsWhniGVDYwEM1HCCOY5rA2nTb1kVdeeKV9h05I1HRpybIlmCjT6tMCEVWvnZw66++vPvP0M5lZDajOovD+P+Yiqbi4eOzNMEskCj0F2zn1kYcnTrw9PT2DxUh7du8ePXo0aAwVqjb+sYrNn//Rm2++yXgIT9huMZpaRGy/O9R4V8hWSOgSUpAk6KdKvYs27bW7AprH5y4rLfDYFVe52VOqwZ0lKhg5aKwmK4Ai7AOmDW7AMGfAwRWAMRMkP4yGLpg1rSg51bP3l+Xf/nhdn6zaasWpIn+sVOiFMRHkXMmSGF2rce36yIamwe1K3gzWzHoZGa+++ioiZzz59NYtWzAPNG/e/MUXX0QMalhUVARlc1NXVS/kjgw62wx1devWY/SYsQMGDkxOTsW0hXj4vZq1aI5ZgPO0aNFi8eLPv/vuOy5/8eLFmCw4VqrIN15BcIYlS5a88MILjzzyCM/LBVahOTPlhYnBFlpRpj/+GFZOt941ITkpEfMbRvXPP/9SKz4eMMILZrF7H5gEIW1atRo6fBiaVFxUpAX80IYGZzNUpAszn/nbo49NJfXrQoW9ov/VA3Zs34oili5dijUiVl3BGoZgM2nSfb1792zdui3EUk1YMAj++pvPGlssVM7oJ8xCq348dsKhYUMHa++Gp8ruS/C4BN3vl2Bf0PfwbskyDAxAKMJKAUwyTJQAC4E5UVQEKcpDo5UGjVeWFFPt+cv2CrotJiAcLhfPOksrygvOlhfm2YsOFB4q8ZSjmdTQUGtp7IfUgTHKW4t5ihOQieFI+GGB9y6nmcXlJLOCRAL2gkz7WmHp0uWYL3hyw4YNOcGf7743+69//SunAd+BAwdCLApCMNiMgjgBUCYnJ2P0g2HatGlYtoMAankWnh0xVV4xHmFEMXTJfStoeSdOUjnUXAkGkg40WBb4n3nz8k6fRQsQGWWOLijM//a7ddRRgjBixKhHp0+j1hHG9Li4uG++XRMfH8/r9q95H3I5eEZbrdjHgNA0aciQYYyBllXcPYn4GoUaAwvSZdghGi7SzmOl++2Ys/USp7/MrZe7/PFOR4zHDdAoQE9IWbSWkXS/rPgls1+WYagCouKTZJ+IXpfMdKCBeQ606o9KOni07FBhSYzFLPjUEmeZ3VFU5Dx7yl1wynX6YFGuT/MxRRrVDhoSlMU1ZTSev6Jkrnfq+VDf83mHv4KNpUDtZEZfevm1Pn363XHHHTx7u7adunSjGZZWYICdLGNDACsIevjw4VOmTDGKMwgukGc3Spw8efKECRM4D/aqILKysjinkRFEqCYURzYe5lwVJt5218Rb7xwy9AadBrQkKnrTpjkFxUWwg6hWcUnZ3X++d9xN/zPtselk+QWhcePG2Jqcyc+H0pFh1Ijh7HCM9MPrE2uLad0Gcz1NnEePHqXCWADWMQk2adIMhZ88efyGG4aDxWqNBr6Jt4ahxlMhdMrOkk0lTvfefFeZhxaVdqej2OMQPP5Yr19UBdmEdTS6T1LRUqxOVOAM4MFhoQaLFRCidEWQAxrcNTSlaWZVVNzwc4l6scXlcovHjhXTilaR3I5AhV6hm2ymKHstS2FMyfE0W53MhHo0FNFSWmlVbS50ZxhUpBlTmNHHLFIFRLiiVWxDWYBE8OzYsY1JlGwxtVo0b/rZZ4t4AUZ2zE00RYrCtm3bcnNzs7OzOYPRbZzT4Ecqp+fMmbNs2TJs3bHsA3ATE2tT3dmypooE/kq5YOMDvvkLPwZNIEIGXbj91r9g73E2vxglQnZJScE7s/mSCJWihcKUhyYnJtTG1E0SdKG0tBR9AY8EIAnN0CqMNh8VeOKVe1jYuJH8Pl+fXr07LG3HsCUtW/bFiy8+D1tLpQPUNQw1RiLkY+iidqfKXWVuh+YuL3f5ylXd6/MJLme0D3ZURl9JuinKGYh2eKLK1Wi/Knt9ktcR5S5NKCtNtlcgxmOiroWhKrFEl9tifDGJ/hhbqTVJt8WfdRZXeMsFEzyFYrHbV2EvcnoKihylhZ6yY2V5fs1DCg6Gc+oP4290MNJBc+MEGgveUBbSOAYD0xetr6kDKGhAW/36WURKep06KVu3bs7IyKDXUMD8iHkQLi6Uf/r06d69eyOGywkJCbGyX14ZPI8fPYaIzz//nCfPmTN39uzZaANBI1g6pYCTMyASMwJ7lWNi4+Pik+LikrKyGz80eep77wNGGKMe8KDHRdEcm5AIhti4Wk2atZj11ls3jb8Jhi05OYlvRz5esBAlAIvoNpo6BOHAgf27f9rFC+L+BZKEd13YsmVLo0ZNHn30UUKdIGHi3vXjTl4rzsJz/Z5nzS0WSZX8AV+BA92j2b1Op0fzuP26I5DmDri08ijNH+0U3WZNyKzXrWly03pKat04m7mObIopU/Xjx/J/2nto45HyOmXeihirN9YqRku6JUqQzbouC24xMTGp3HXqrFNPkhVJUwW/5PS6KrDYstQucVecdhSVuu3JNtpS0ZoIEAhZeMxWpOlQ36CWeI2NjeVa2LNvLywN36bBj+CkIUtqrlu3riFBVX1PPPHY3LnzNm7ceOTIwTvvvPO9995jnc+6hPVKl06dp097NLVuCorNyzuNefP779dfQOm8PoRvXbiqx1VPPvnkjBkzUC4cklVqy+vJn8iFvTMW8IpZWfzpgjat27n93qz6hHKaDdE0Eza5aL9WLyNt7ZoV8AAjCW0J1kQXel/V8+CBA2DYtOn7+++977VZryMJ4dixY0OGDqdNAAvjb7kZkYbS+Mrv2Wdnbt689dtvv4XZg3+Oc4KNE7/zWWNgwd2AazCOgGJ3eF0+n+7VXKpqV/2CrtjcpWJRnjOlSa9r2w1s6+jTNDfVdkRQXLotSozPEZQ2gtJSVzrC8G4/ePydRVvmbfkFE2RsQrrd4pYUWdMSBbMzJ6e23b/vsFNOitOxpPeoou7WMUG6rXa/21HoLi5y2VNikpi3Cbs2mr/QVBqd8FsxVNFGNBT69e/12usvI74gP69r1+633XYb1vhvvPEGU6aEvXpOk6YAIGfHT8PsBh99OC+7YQN04Pvvvw8Y3T7xDjZ8wUUm9qef9oy7ecyTjz8145mnkGvjxg133333W2+9BRqpVbRPZodwgA1ycA/71FNPbdqyefWqVWQ+WG1RbVY6NYTNd3ilKYuKIyapbZv2KampSKKpgv8PkvJiSSVhdwIbww0MkxOsxtPPzsAc6nQ6ETnrzTfWrd+AtgDNK1evKisrobJ0AW7StLQ6sBFAPYw9pJNhowEprFixPCsrC7M29mB8VqWfYBV4Ob/xrDGw+CTt8mqlKuyUy+VX/aLT5dezCk7B1XT19SMmj0lsHveFWrBA3a97ZF1JFGVLJ3/dPEdskalWVgy2g4LQqUla58fGjtyxZ+j8H+yqNz0uOUqQfJboPNHfLMNS4j/kUIQMFWsy7Ik0zSt43a4Kf5nDb3d67WWeEkFvQG2kPUQwQFNwafIXWgOxgJ6DwwkTFvfO79y5fefOnSyFVgzI/vCUBzkU+LIJ2v3pp5/69O173XXXLf96OfQ48c6JPXr2wmIZwtkalhyn6IWnZjy5YeP6b775BnLefvvtRo0awZfGRSGGIwzSuAEAgTMZVi49vlr2JXaaeXl5PIYn0e6L4ZK3AqJULzUHqZhzU+qkciAGi8CSB4tTBDanw8/J/assCnEE2Tp16vzrX/8aMWIEG3v67t0/4h9PAhuKatu2zbx580D7gSyfjyQjGztSww8OHuAcwSESaMav0zYZdGgQ8rIu8KzsmwswVU9y+fxev8/vC6DzKzyycPpUXFrim29MmfNCVE7eGOeqj325mqLUEm2JmikddtfntElS1xhrWxyw0uIBZl70D+nY6uDjw9PS4k4JWvOUmIwkS5/MOo1q+ffmHYi36PCfSroi4+Ra04Bjt89e5rOXex0Or4OWCzR62aANVs5wu6M7g73Iu+Grr7665pprwMVeASlCFXbsU6diV/cgeUGgaNIaCaIhLgrz589PTEqiLII4aNCgsrKyaGvQ70z+YeQQha+//rpevXqURxCw6Vu0KLjM5zF4ggudwbvKwDriYWPgQMKTc/IkcKImrGepegzozEIwmCIGSbw5lAteZdgPFsserOr0TgFJ4AQ/9q0rV66EA5nH48lRgqUkkuD1AHqCSezEDDTMPp7IDiFdunR5/vnnjXKpRCY2mOW3fmpssWiOFwW/5lX9ml+NcXicZ04fH9Etc94jE6xF88tfu022CEpsuhgVCKCDnWTTxbhDAa2PLak37A/mBDQcOxT0DyDWKCHuqz91+/P//hKXCntsHle/QXHeG8sLfC1jRFyXQEOwxoJ/Xw1ImHedNm+p14N7XdRa9C2wAOyFNH7/pHv7X90bpWVl5hiRaL7VaoV+YbTgKSgpKkZOnC6PHz+eOzbBD54P5rx39mw+TofgvkdeuHk2b9wE1Vst0SfyTgIes2bNwpoXyu3QoRMvEL0C+4fzbzDjfDohIYGrOrzol156KTf3MGLgbAyPx5HA9u3bd+/eDcdN46bY3gs4OkxJqQ0opabWBXASkhI//2wxdhg4SGnY6Jzm8FKuvvrqTz75BDVBuQAKsiAeReBp7FdADxgw4NChA7BMGzZsRNtR5wY5DW+8cWS7du04P5qPIj766MOyklKk9uh5Fa8nF/Lwww+DkxyEmg7rReOMoZ8rDRIuEAjaF0iunkTsororz75pb+HGoyWf/LL7gdbpr9x+rVCx+dTb/WIDfrlOihywCGZ/QFFNkhcHUUL0WaHh49HNnuKgR7WoSKCCpJMBWLAj/ztH2dC6GfVivFMXXLurXE83S35NUHUV+QU14FfElDhr3ZTMmLi00TlXDW95LXKy5gUtLrocuuBKYQ0KG99USihQ5UN06JfnCr4xhsoYWsaQiqjOIQQbREjAuebEiD2XMHKBQEq4QF55RBo8lVlDFT5PUoipSpLxCuKcgugNWg9qBjaSITJUaLWCDDk8G/QWHhNOE0O1UOOpkM0D8IiITk3eX5z7TI+sVyYMhs4dXz9pDfiUhLoBjxLAdg7TER35ACD5gltTYjqgKrpIZ/uoA1vPktWFDUNMr5y4QXXrDm4cu2HTcysLpUwbaqXBpYF5EyVhlpIDui8AfHmwxjJJZg4p9DnZZxY4qjhNUpkdCr2G/VZDFdLOYQ6pj2qLqtIOLMhgsBkEkognhBIQPPBITvMaIobnqk6ALVwg+Hn2oBBWYSNXsICwn+pJhjQQnOZPQkaYZoAqXgRSab5Gl4TWeVw8zxVejaAclhxOh1WnkqwxsEiRAR33En5xFgxtVO/R0QPw7sn/3pO7VrJG4fheESwiLoviVE8zwR8KVzmWhoINO2FyM6H+tMohKXTtHS+iLidbzdfmJCzdvfS5n75vF0MrUw2uBo1dPYA/VdK9Jgk+d6/m0fz+JAsmHao21CSF1u9cv0xH56AKbsxJkyYfOHCgssXnp4IARaIhxNAdV274k0o/H6S4bCMjXsPsaBCCvAjOGc6PfkVGPgcZPOGlcNrIGJ6EyCqpBls4wStmcOLVEAI2FF2FAZHhMUZGxIfT4UUYdI2BRTklzeHzZJvEiQPb8C1y4ORawYmrKSk6ebI9sDbocxyFBuDv9ZkCgsWh+7wBTabrfuzcgQBB11ooiILZZN6d+92Tnz8tmUSrQpOaCGYFnhwyTrilhBGFbblH9UdLSnp8XRyUYbLn+1MmonLQM0VUouStt96Z9frrH334MWfjBXIaT76yNl6DPMy6hCuOKxdPRHIanFUI47WKNIOzCkOVV0jmkDKKCOomrO/Dsxhs1eUjqXodwmPC5YTT4DEKDec3yjKYjZhwtip0jRfvQIMfXz14fYOaptWvhbNMfDQo+fIPw2WJC7bYveJ6KEAgyWoAe1gFBsdk8ZntbpcarSabRUnBToR/e4hDnIDMLims2rrw8a/fgEs1xxrwwE2G02pB9JCCVG6VTPDsC9Jxf0Wn6OSMWljeqhr2AejcUGsw3NExoQbz0QJ4SQ8+MDk7M+u2P91CjKQ2rnXmWCL3EheA2SdEEmIgBnnprJMEEoYpNwKYEAMCT14cxxexiXS9joGDxgxjP2fQch5UCQRCFRgZxVcSTAQvNERW/hpslVEh6gJJIZbqv8Gqhhp6DkN1gdVjzsnAXmoMLAKPqmUkxqUnwtuLvsEJjqDhBAYLEhVTNbvUoGJPB4QpOKHS4VKvKLO6TqkpFq+vvMhRblMUizlewTm015VXdPSrLf/84MdNUrRYz6b7yAMFB7zgQ9fgLhId0Ku6qECeLIunXXrPtLZ0d0rys5LBhG6mtQLvJ+xf4Ijq1KkTHO6oGHq6dZtWrdu2Co1EmD1CEHyP8P3s2vUTCmvfvi12/oiCEDyZTtD3gAiRcDTs3b3HFmvFHVEWg8mCA4tjkfiBNJaRZjEIQUQl3glhoT6jWPwjjbHigh81sRIZgsOy8cjL+nnOqPqdLcHFhazateKjQrtcOnygj3MEr1lXcbZMH6OSv4pCAJdFA37JenZrifPkL2V7DxRsW3V48aIf3pu97rlXVk6a8cVdi/ZvzIgTU6KxtKIPWFEHdDFghAU7Ldth/wI67gKe8ov9omv1bzUAPSVi9YVrJcALW/tzWAwbNgInpldfPQD7/7vu+guqgfh/ffhRRkbmmtWrWZfTMqKkpAw88GN17961W7cuOIXt3btvbu4xMCMLqzOx4UADV69wjaRXn74dOnQB/5gx43EdHnXDP3ioN32/OTu7Ia5D2WwxDRs2evjhR1BzCHlw8lSMtahoa72MBs2at7baYmGl27bpyCvAcEal3HzzrUuWLGZQI60jI2s4Nf+/I9TYYkEBWDJbg+491rvQhGgGCrDykQUTRiw+2MHCCTMktnNYZuEWn3pqvZg57FiZQxYLyjxFsAR5jny757TPJCYl4LoM+2CahjLzwqkEKrJ9Acnn1zWz6MLNrTJ1Qq8xCVZcEcadCfIB0DkJLBDbuPXvf826dd/063f1Ndf0X7x4yfvvz85IT3v8iSdwNAYfN44mqOc0/bsN6/v16wcAAUwggCo4t9asWdWwYfbMmc9Nm4ZrMMSIA72nn34KJmr48JGwfzgJWb58+aJFC+EPg/ue39DCxxdwX2XWz87Krg+P1Msv/R2uqW+/XduoccNWLdol1k7atm37qbzjnTp3hXusYU42wBQyi1JBwWlc1LTb7ZAP5bEkAhbKNujLHV7Ukpq1AexQAu1c8UueKayo7MtuEzd/qMen0ikvVu5YuuNwDGwwajK+rFdVd4Gp97QFSovS4v1mQS33lpY7z5Q7inFG4/D4vLrJi3vKAc2Ngx3cHlJ1vy564XEA4ATRpejHi4RhmVmfPfCJzK55UQVoIUNVAInzu7ZtW48bd/NHH33Ihz4O7zp16IhrCK+9NuuBBycvWrhg1OgbcVeuflYm/KXYKsIaQQDrRfnEiRNt2rSJj084evQQwPr22+/ec889PXp0A0rwBU5IORo+1OnTpw8uc8KVGh1t+2LJ0hEjh3322RcjRtL9Klisl1564d1337vrrolUNUEaOWLs50vgwzyPev/857/Onv0OaoKrXfhEIlREJcKMmMuXqPlUyL4+QIMBLTzRtdjCmZKyNBm3kfEZil/H5TTgQcMGEWd9mCXZOZRXFA582zRGzi0tK6o4VOAprXCXqQ5nwAvzYaL/2foHiMT4ho3DXArE4FI9HBvH7YSfmeNmwvXCVlUwjggaFvnMXyHgWxq8162TzlGFJBwMd+7aBXYNbkAk0ZVLQRg8dAj6+8SJYxxVoOmgVw/Ur1//1KmTuN6OV1gR5MVZzYYNG4AqDgv2lHDm+OOPu1HWqFF0VZxflDhx/CjnwdUlRLKLMcF1VUUF3XfldUOSETweF+5mde9+ldvtevDB4FVBLoTXn9MG/2VK1BhYtJ5GAAQAKlgmZsClep0DSdGK4sDqRMMhjAqo0K13zQ+fAe6L+kVLhid3Swfnjq6ZHTaeLi62H/E6PV6faMelM1wChIHTAEDdDWsF7wLOcvDZQEAOWMVfnFGCQ1g2dnrztCZkYmjxS1Mg3bUju0Xr5S5dOrRp3eGVv7/w8JRHvV43VS0UeFelpqbiNHfPnn033XRTUlIyqz6NCuTlDFZrDM55EIPTMeBy3ry5oHGSw1Px5J3dpk2rXr36fP31SjQapy7gAWTZcl7zsX0HCuJVQhJ4qLohhyeLIdU9POUxXN9bv/6bQQOHvvPOW2BgSZUPXmjl++VJVfbB76y/yP+kAjZsPJDhkqS63S0Z/YVoBwwMTvYEoMNPbgmsngKBaNFrEU2q2Sr7vnp5bEL0Te1uPXJCOl0cyDfLWLDHebBGlzzkZ0dlJBN2gLA0suiTtQNn1DhV/ObOp4d0H8bxDF8+M5QSPPJssYUnoCZv2ry+c+euL738XHR07MiRI8LsBG6DaLUTE7EYBw5vuYX8DrBSBE42JFAiJIRoYeXK1Vha4VMCFsPbiFRCM2IQRo8ehdcDB37hn6disYhP+FatWpWVlYXUxx97Mow5mJ0hj/JyzL3z7hstW7aRZdOTT01HDIMyT/2vetYYWKHWs4zQNv7RLYs4Kae3oGSYrLG6VRUUj+j3Y1KDiRF98EGJOm4sm+sEvKJr8SO3NW03ZeijxyTzN6els17Nh4/oiFPy0V99CODWcJmk7ncoh/OFgbXSNz04t0/7gWxtj15A/wYvNoHGdETlw6ElivgMCxc+P120BLeXliz5IjMzA8t2VJUsDS746jq7pgKE8aPiYKt37qS/PJPTqFmr1u179Og5e/b7WM7jU0QOu7CWVmqJ4wm7gdhYG4Az7fFptrj4IdffUFRSiHsmjRpnMqSGsgZ/WXZw68Krr76uqtrcuXOQ0rlLl5xGjZ5/8QVKQUv+u0Klyv7NdpmyBwhpnXRrnGxLkawxAj5KxYYQzndN1fwyvoxQPGY5LkUoP2af3X9UYsJXdy19vtX1qYplfZmwtty80S5stcs7HOLOUv/RIrmvNW7WNX9a9vSS5mkN8eUhNn80uZ4zrVTWl89TMBWjbhz2w65tixd/WlRUgjtV4IiKwrcAFFq0aIUb1Ydzj1Rmg8VTfbhRjTsqPp8HNy2Xf7UC357jPrjHQ3ehmOMqnJ3ow4cPIwVwxFYRyB41YiS+SsWJgtfjveEGfNlCkyYCOOGvCs9MRw6i8Myzz+JWBZxnKEUP+B9+cLK9vGLRJ5+EnyKE57p86eDq4d9sAFSJqzz+wx+rvyxVVLtoP+P3eGUHrpC5tAD7C1kmj6qacL9DN4uBony/WUi57g2x8z35bm3HvuU/536fX3YaH/DgT2Wlx6S1yO4woPNgswKXBpk8dBG8ksG9QmhKMiqMovk8xbqTT2ry6BvHffrZJ5qmLpy/YPwt/7Pum2979r4K67+OHTtv37411PFkJfjW0u322qyWadOm46JS584dcUkGG0O2soLsc4wJXFa5ublo7vp1G3r37bVn936rzQJvxdSp055//lm2vKP6oIgB1wxes/Zru70c39ez2mq4GAgXGhoUY4vz+PGZkgk7AFd5WZcunfBXHsILMhplNPOyI2rsxzpfC9GdOr73UjKH2p0n9bPbZCXL7PaophLFY/P5SjQvXarCF3uaagIMFFu65M3PXzhF/mlhyuC/De4weEhHWBcsw9m8yhflwS0CJj8686Y/CcjW6tVLR3+MGXPTnt37ft6/m7k3DBZaGGFlDBAUFhaAHj167KJPF+JLulv+dDNjIsRg0QY/+/Drh4KcMOFWXIvD6h5/qurWW/8nNjaegyrUzdpzz7109OiR+++nD0Tx9Qvyr1q9YvLkSYAjdoXXXTeoV69eaAXnB47BZsyqWInec+8DiLn/3kk4IaADUPzZppiYg4cPrV27Fne/4DALFURDCZyXd0Bj/u1A9yQhBOYlULrXue0x//o/e1fd5F0yzPFRX+e8Nr73mtlnNal4Lbv873UdL2eUvJheMaNh6ZNJxdPF0zPlsi+GOY+vQWY4K7gcepK3Aqdv+HMHFPDk8yB7q/II3H777ei/6dMf5wn8LgNugiPLm7NwvV3+ZMEiJGFjWC8jEz327LN/C4nArVz1xpGjEYkNIy8Cd+LQo7js+/nn/ws2Nv1SXvw5EHQ3plReSfixkOuF517konCIBI8UvBv8FaKu7k+XxuC/YDGBXTt/wHx33z33s8YgLsgJCpjGffxfbyAXeZk9aXhdnKD5CA6a7ivd5dnzsm/7g4F1Ez3L/+T7YrDr0wHOj/s55nVxzW3pmtOk4h857jmN3LObuGc3db3VsviFugVvNSxbNsm9f76rcLvfW6SqDr/q8Kl+n+pGT2lwl/5WwP1GAKhhgyb4Rp7DAn+oCJken/4EXufO+QcXUOGwN2vaCjHAQa/e/bt17wUaYcTw0ZwBvYsADzuuU8Js1K6d0rNXPxwU0iGSKOIvILB0QjtuTABYj03H7UV6xWctkNOgQU4ISTo+dkVMeXk5UjFC0vDnuES6+sxeKQsPyD5yJPnfl32x1IgJJV7GvzK+G0GrLkbAhIgxqQuWVMkSj7kxYImRzFF6lFWx1RbMNhmEJVaLTjFZLYIlWYtKMsVEi7XiolIbRcekKOpRtWibVnYmYD+iO4/o/tNSwGGCE9RipSs45y6Ew2uLjkGXT5gwobCwaOuWbSdOnOzZq+fatWv5XW+X03nqdP7N429JS09Driiz+e57/mKzxuceObZn3y5MkW1adXjxpRefnTkDqTQXswCfFv7CAiY7SNu7dw+EtGnbeubMv73++qtIByeeuPR/4ODhG28c0aQJTKOAvzmDJh89mtu/fz/2kadeUFCEv8gFQ4hDbofDvvLrb8ePu3nQIFxfA8BICCsPCzKpZ4+rtmzeAq9s585dMJHyIojhcg4XZ/FOGoBFF3EEg9NnE7nNA4W6I1d05OnuEhGfP3idqubUVbuE5Ra0Ck9SQAnAV8VubkmmGPxlMVmOVfCRqpQkRdfVbCmiJU1UauPLOsrAOuK8euaDGgsaEOFdAiMBoNNNQCqOOhMM5GRiF3XCRfGM5z4rrx4gD4JRPhPCYoLLIBpOADdfUSGBy2G7guBWDzFgCN0DNj5wJUcaQpW8iAlvBWO5LB8XD1ikU5zssRsJusxWrh5NdUru05paLvhKBG+57nPAU4WtHp20wNtOp85wJpjwF7O0qDg9KlG21NJMOHC0wrjoOM9GhwZBxczhZanhK7TSFxNYXIVsTLNRR3aCFhMCDg1xvhxwCyr8Qx5cMQWwFJoE4BKVcWFLVCyCGC2KNgGf+PADGTIwGLtXaK/8FzT7IgIr3KiARggewDB8hGJoXsJn02SrOHawD2fMmKSCBF5DEwpLCcZzOvK8PDRwEYHFG8wBFAQZ4YPWNDySMxDaEOCJZvYo+HouT4iT/0ael6EGLjqwwnVAeGIo4tYIBokAx6wRorl9MvgN8FWJ5wyU0WCNEP/5GrikwKLm00LLUEPoJfTLwVQdMRcGmSEuQvznauAiAus8KAlbKhmpQQLYQmA39SqBFQLcf66+IjX7nRq4iMA6f4nVNncAloEkA23V84axhTBYnSkS8x+rgUsOrP/Ylkcqdkk1YBiPS1pKRPgVp4EIsK64Lv9jGhwB1h+j5yuulAiwrrgu/2MaHAHWH6PnK66UCLCuuC7/YxocAdYfo+crrpQIsK64Lv9jGhwB1h+j5yuulAiwrrgu/2Ma/H8Ialw4rnWLQgAAAABJRU5ErkJggg=="/>
+                        </defs>
+                        </svg>
+                        
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem </p>
+                    </div>
+                </div> 
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#"  class="reference-item">
+                <div class="img-card">
+                    <img src="./img/logo/reference-item-brand.png" alt="">
+                </div>
+                <div class="text-card">
+                    <div class="desc">
+                        <p>Türk Nippon Sigorta Lorem ipsum</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <section class="divider"></section>
+<footer id="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="flex-column d-flex align-items-start">
+                <div class="logo">
+                    <a href="javascript:void(0);">
+                        <img src="./img/logo/footer-brand-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-mobile-column d-flex align-items-start w-100 justify-content-between">
+                    <div class="info footer-info">
+                        <div class="adress">
+                            <span>
+                                İkitelli OSB Mahallesi Demirciler Sanayi Sitesi Yolu YTÜ Teknopark Kat 1 No.104 34306 Başakşehir, İstanbul, Türkiye
+                            </span>
+                        </div>
+                        <div class="info-contact">
+                            <div class="contact-items">
+                                <div class="contact-item d-flex align-items-start">
+                                    <div class="icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.12666 5.7709C3.12222 5.68893 3.10169 5.60864 3.06623 5.53461C3.03077 5.46058 2.98107 5.39425 2.91998 5.33943C2.85888 5.2846 2.78759 5.24235 2.71017 5.21508C2.63274 5.1878 2.55071 5.17605 2.46874 5.18048C2.38677 5.18491 2.30648 5.20545 2.23245 5.24091C2.15842 5.27637 2.0921 5.32607 2.03727 5.38716C1.98245 5.44825 1.94019 5.51955 1.91292 5.59697C1.88565 5.67439 1.87389 5.75643 1.87832 5.8384L3.12666 5.7709ZM3.93166 2.57673C3.82221 2.69768 3.76439 2.85662 3.77053 3.01963C3.77668 3.18263 3.8463 3.33677 3.96454 3.44913C4.08278 3.5615 4.24027 3.62319 4.40337 3.62103C4.56647 3.61887 4.72227 3.55302 4.83749 3.43756L3.93166 2.57673ZM8.88666 16.5101C8.95615 16.5549 9.03385 16.5854 9.11524 16.6C9.19662 16.6145 9.28009 16.6128 9.3608 16.5948C9.44151 16.5769 9.51786 16.5431 9.58543 16.4955C9.653 16.4478 9.71044 16.3872 9.75443 16.3172C9.79842 16.2472 9.82808 16.1692 9.84169 16.0876C9.85531 16.0061 9.85261 15.9226 9.83375 15.8421C9.81489 15.7616 9.78025 15.6857 9.73182 15.6187C9.6834 15.5517 9.62216 15.4949 9.55166 15.4517L8.88666 16.5101ZM12.5942 16.7151C12.4318 16.6811 12.2627 16.7131 12.1239 16.8039C11.9851 16.8947 11.8881 17.0369 11.8542 17.1992C11.8202 17.3616 11.8522 17.5307 11.943 17.6695C12.0338 17.8083 12.176 17.9053 12.3383 17.9392L12.5942 16.7151ZM13.0375 12.9534L13.4167 12.5534L12.51 11.6926L12.1308 12.0926L13.0375 12.9534ZM14.6658 12.3851L16.2575 13.3017L16.8817 12.2184L15.2892 11.3017L14.6658 12.3851ZM16.565 15.2017L15.3808 16.4476L16.2875 17.3092L17.4708 16.0626L16.565 15.2017ZM6.96582 13.2992C3.73582 9.8984 3.19416 7.02923 3.12666 5.7709L1.87832 5.8384C1.96166 7.38006 2.61499 10.5334 6.05999 14.1601L6.96582 13.2992ZM8.11249 7.7684L8.35082 7.51673L7.44499 6.6559L7.20582 6.90756L8.11249 7.7684ZM8.53916 4.3834L7.48832 2.89756L6.46749 3.61923L7.51749 5.10506L8.53916 4.3834ZM7.65832 7.33756C7.50835 7.19302 7.35695 7.04996 7.20416 6.9084L7.20249 6.91006L7.19999 6.91256L7.15832 6.9609C7.07672 7.06908 7.01209 7.18907 6.96666 7.31673C6.88499 7.5459 6.84166 7.84923 6.89666 8.22756C7.00499 8.9709 7.49249 9.97006 8.76499 11.3109L9.67166 10.4492C8.48166 9.19673 8.18832 8.4259 8.13332 8.0459C8.10666 7.86256 8.13332 7.76673 8.14416 7.7359L8.15082 7.72006L8.12749 7.7509L8.11249 7.7684L7.65832 7.33756ZM8.76499 11.3101C10.0342 12.6467 10.9925 13.1717 11.7233 13.2909C12.0992 13.3517 12.4033 13.3026 12.6333 13.2117C12.7612 13.1621 12.88 13.0917 12.985 13.0034L13.0142 12.9751L13.0258 12.9634L13.0317 12.9584L13.0342 12.9559L13.035 12.9542C13.035 12.9542 13.0367 12.9534 12.5833 12.5226C12.13 12.0926 12.1308 12.0917 12.1308 12.0909L12.1325 12.0901L12.1342 12.0876L12.1392 12.0834L12.1783 12.0484C12.1861 12.044 12.1847 12.0442 12.1742 12.0492C12.1575 12.0559 12.0825 12.0826 11.9242 12.0567C11.5892 12.0017 10.8658 11.7067 9.67166 10.4492L8.76499 11.3101ZM7.48832 2.89756C6.64332 1.70256 4.95332 1.50006 3.93166 2.57673L4.83749 3.43756C5.27332 2.97923 6.04082 3.01506 6.46749 3.61923L7.48832 2.89756ZM15.3808 16.4476C15.1483 16.6926 14.9058 16.8242 14.6692 16.8476L14.7917 18.0909C15.4142 18.0301 15.9183 17.6984 16.2875 17.3092L15.3808 16.4476ZM8.35082 7.51673C9.15749 6.66756 9.21416 5.33923 8.53916 4.3834L7.51832 5.10506C7.86999 5.60256 7.81582 6.2659 7.44499 6.6559L8.35082 7.51673ZM16.2575 13.3017C16.9417 13.6959 17.0758 14.6642 16.565 15.2017L17.4708 16.0626C18.5583 14.9176 18.2417 13.0017 16.8817 12.2184L16.2575 13.3017ZM13.4167 12.5534C13.7375 12.2151 14.2383 12.1392 14.6658 12.3851L15.2892 11.3017C14.3733 10.7751 13.2392 10.9259 12.51 11.6926L13.4167 12.5534ZM9.55166 15.4517C8.73249 14.9367 7.85999 14.2401 6.96582 13.2992L6.05999 14.1601C7.02166 15.1726 7.97416 15.9367 8.88666 16.5101L9.55166 15.4517ZM14.6683 16.8476C13.9742 16.9081 13.2749 16.8635 12.5942 16.7151L12.3383 17.9392C13.1438 18.1133 13.9709 18.1644 14.7917 18.0909L14.6683 16.8476Z" fill="#00AEEF"/>
+                                        </svg>                                        
+                                    </div>
+                                    <div class="d-flex flex-column color-secondary">
+                                        <a class="color-secondary font-regular" href="tel:+90 212 217 07 00">+90 212 217 07 00</a>
+                                        <a class="color-secondary font-regular" href="tel:+90 533 471 38 45">+90 533 471 38 45</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item d-flex align-items-center">
+                                    <div class="icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.99999 18.3334C8.84721 18.3334 7.76388 18.1145 6.74999 17.6767C5.7361 17.239 4.85416 16.6454 4.10416 15.8959C3.35416 15.1465 2.76055 14.2645 2.32332 13.2501C1.8861 12.2356 1.66721 11.1523 1.66666 10.0001C1.6661 8.84786 1.88499 7.76453 2.32332 6.75008C2.76166 5.73564 3.35527 4.85369 4.10416 4.10425C4.85305 3.3548 5.73499 2.76119 6.74999 2.32341C7.76499 1.88564 8.84832 1.66675 9.99999 1.66675C11.1517 1.66675 12.235 1.88564 13.25 2.32341C14.265 2.76119 15.1469 3.3548 15.8958 4.10425C16.6447 4.85369 17.2386 5.73564 17.6775 6.75008C18.1164 7.76453 18.335 8.84786 18.3333 10.0001V11.2084C18.3333 12.0279 18.0522 12.7259 17.49 13.3026C16.9278 13.8792 16.2367 14.1673 15.4167 14.1667C14.9305 14.1667 14.4722 14.0626 14.0417 13.8542C13.6111 13.6459 13.25 13.3473 12.9583 12.9584C12.5555 13.3612 12.1005 13.6634 11.5933 13.8651C11.0861 14.0667 10.555 14.1673 9.99999 14.1667C8.84721 14.1667 7.86471 13.7604 7.05249 12.9476C6.24027 12.1348 5.83388 11.1523 5.83332 10.0001C5.83277 8.84786 6.23916 7.86536 7.05249 7.05258C7.86582 6.2398 8.84832 5.83341 9.99999 5.83341C11.1517 5.83341 12.1344 6.2398 12.9483 7.05258C13.7622 7.86536 14.1683 8.84786 14.1667 10.0001V11.2084C14.1667 11.5695 14.2847 11.8751 14.5208 12.1251C14.7569 12.3751 15.0555 12.5001 15.4167 12.5001C15.7778 12.5001 16.0764 12.3751 16.3125 12.1251C16.5486 11.8751 16.6667 11.5695 16.6667 11.2084V10.0001C16.6667 8.13897 16.0208 6.56258 14.7292 5.27091C13.4375 3.97925 11.8611 3.33341 9.99999 3.33341C8.13888 3.33341 6.56249 3.97925 5.27082 5.27091C3.97916 6.56258 3.33332 8.13897 3.33332 10.0001C3.33332 11.8612 3.97916 13.4376 5.27082 14.7292C6.56249 16.0209 8.13888 16.6667 9.99999 16.6667H14.1667V18.3334H9.99999ZM9.99999 12.5001C10.6944 12.5001 11.2847 12.257 11.7708 11.7709C12.2569 11.2848 12.5 10.6945 12.5 10.0001C12.5 9.30564 12.2569 8.71536 11.7708 8.22925C11.2847 7.74314 10.6944 7.50008 9.99999 7.50008C9.30555 7.50008 8.71527 7.74314 8.22916 8.22925C7.74305 8.71536 7.49999 9.30564 7.49999 10.0001C7.49999 10.6945 7.74305 11.2848 8.22916 11.7709C8.71527 12.257 9.30555 12.5001 9.99999 12.5001Z" fill="#00AEEF"/>
+                                        </svg>                                                                              
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="contact-mail color-primary">
+                                            <a class="color-primary font-medium" href="mailto:info@talentsys.com.tr">info@talentsys.com.tr</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-media-items gap-3 m-t-6 align-items-center">
+                                <div class="item">
+                                    <a href="javascript:void(0);">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M30.0823 15.7977C30.079 12.9075 29.2537 10.0787 27.7039 7.6456C26.1541 5.21246 23.9447 3.27667 21.3366 2.067C18.7286 0.85733 15.831 0.424342 12.9862 0.819199C10.1415 1.21406 7.46846 2.42026 5.28312 4.29526C3.09778 6.17026 1.49144 8.63569 0.653911 11.4002C-0.183613 14.1647 -0.217308 17.1127 0.556813 19.8959C1.33093 22.679 2.88051 25.181 5.02242 27.1061C7.16434 29.0312 9.80905 30.2989 12.644 30.7596V20.1775H8.82715V15.7977H12.644V12.4843C12.644 8.69468 14.8971 6.59277 18.3333 6.59277C19.4606 6.6087 20.5851 6.70907 21.6975 6.89304V10.6206H19.7942C19.471 10.5776 19.1424 10.6081 18.8324 10.7099C18.5225 10.8116 18.2391 10.982 18.0032 11.2085C17.7673 11.435 17.5849 11.7118 17.4693 12.0186C17.3537 12.3254 17.308 12.6544 17.3354 12.9813V15.7977H21.5123L20.823 20.1775H17.3457V30.7596C20.8917 30.2019 24.1234 28.3882 26.4585 25.6451C28.7937 22.902 30.0788 19.4099 30.0823 15.7977Z" fill="#0079C1"/>
+                                        </svg>                                            
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0);">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3734 30.4426C23.7799 30.4426 30.5947 23.6278 30.5947 15.2213C30.5947 6.8148 23.7799 0 15.3734 0C6.9669 0 0.1521 6.8148 0.1521 15.2213C0.1521 23.6278 6.9669 30.4426 15.3734 30.4426ZM15.4465 10.8282C14.5737 10.8261 13.72 11.0835 12.9937 11.5675C12.2675 12.0516 11.7014 12.7405 11.3674 13.5469C11.0335 14.3532 10.9466 15.2407 11.1179 16.0965C11.2892 16.9523 11.7109 17.7379 12.3295 18.3536C12.9482 18.9693 13.7358 19.3873 14.5924 19.5545C15.449 19.7217 16.336 19.6307 17.1408 19.2928C17.9455 18.955 18.6318 18.3857 19.1124 17.6572C19.593 16.9286 19.8463 16.0737 19.8401 15.2009C19.8318 14.0401 19.3656 12.9295 18.5429 12.1107C17.7201 11.2918 16.6073 10.8309 15.4465 10.8282ZM15.4465 18.0432C14.888 18.0452 14.3415 17.8815 13.8762 17.5728C13.4108 17.264 13.0476 16.8241 12.8324 16.3087C12.6173 15.7933 12.5599 15.2257 12.6676 14.6777C12.7753 14.1297 13.0432 13.626 13.4373 13.2304C13.8315 12.8347 14.3342 12.565 14.8818 12.4553C15.4294 12.3456 15.9972 12.4008 16.5134 12.6141C17.0296 12.8273 17.4708 13.1889 17.7813 13.6531C18.0918 14.1173 18.2576 14.6633 18.2576 15.2217C18.2494 15.9638 17.9503 16.673 17.4246 17.1967C16.8989 17.7205 16.1886 18.017 15.4465 18.0224V18.0432ZM11.8129 24.1331H18.9342C20.3554 24.1303 21.7176 23.5645 22.7226 22.5596C23.7275 21.5546 24.2933 20.1924 24.296 18.7712V11.6395C24.2933 10.2183 23.7275 8.85613 22.7226 7.85119C21.7176 6.84625 20.3554 6.28046 18.9342 6.27771H11.8129C10.3917 6.28046 9.02953 6.84625 8.02459 7.85119C7.01965 8.85613 6.45386 10.2183 6.45111 11.6395V18.7712C6.45386 20.1924 7.01965 21.5546 8.02459 22.5596C9.02953 23.5645 10.3917 24.1303 11.8129 24.1331ZM9.20985 9.03645C9.90043 8.34586 10.8363 7.95667 11.8129 7.95393H18.9342C19.9109 7.95667 20.8467 8.34586 21.5373 9.03645C22.2279 9.72704 22.6171 10.6629 22.6198 11.6395V18.7712C22.6171 19.7469 22.2276 20.6817 21.5367 21.3706C20.8458 22.0596 19.9099 22.4464 18.9342 22.4464H11.8129C10.8372 22.4464 9.90137 22.0596 9.21049 21.3706C8.51961 20.6817 8.13008 19.7469 8.12733 18.7712V11.6395C8.13007 10.6629 8.51926 9.72704 9.20985 9.03645Z" fill="#0079C1"/>
+                                        </svg>                                              
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0);">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_29_1654)">
+                                            <path d="M8.56604 7.94238L19.4522 22.4979H21.9174L11.0313 7.94238H8.56604Z" fill="#0079C1"/>
+                                            <path d="M15.22 0C6.81415 0 0 6.81415 0 15.22C0 23.6259 6.81415 30.44 15.22 30.44C23.6259 30.44 30.44 23.6259 30.44 15.22C30.44 6.81415 23.6259 0 15.22 0ZM18.8706 23.6594L13.9141 17.0326L7.77979 23.6594H6.20279L13.2094 16.0904L6.24723 6.78057H11.6136L16.1783 12.8839L21.8276 6.78057H23.4046L16.883 13.8262L24.2375 23.6594H18.8712H18.8706Z" fill="#0079C1"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_29_1654">
+                                            <rect width="30.44" height="30.44" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                            
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0);">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9224 15.2213C30.9224 23.6278 24.1076 30.4426 15.7011 30.4426C7.29466 30.4426 0.479858 23.6278 0.479858 15.2213C0.479858 6.8148 7.29466 0 15.7011 0C24.1076 0 30.9224 6.8148 30.9224 15.2213ZM22.7828 10.4197C23.4682 11.105 23.8532 12.0345 23.8532 13.0037V17.3556C23.8532 17.8355 23.7587 18.3107 23.575 18.7541C23.3914 19.1975 23.1222 19.6003 22.7828 19.9397C22.4435 20.279 22.0407 20.5482 21.5973 20.7318C21.1539 20.9155 20.6787 21.01 20.1988 21.01H10.8287C10.3488 21.01 9.87358 20.9155 9.43021 20.7318C8.98684 20.5482 8.58399 20.279 8.24465 19.9397C7.90531 19.6003 7.63613 19.1975 7.45248 18.7541C7.26884 18.3107 7.17431 17.8355 7.17431 17.3556V13.0037C7.17431 12.0345 7.55932 11.105 8.24465 10.4197C8.92997 9.73437 9.85947 9.34936 10.8287 9.34936H20.1988C21.168 9.34936 22.0975 9.73437 22.7828 10.4197ZM14.1915 17.6055L18.356 15.5233C18.5226 15.4191 18.3456 15.1693 18.2103 15.0964L14.1915 12.91C14.0353 12.8163 13.4731 12.9413 13.4731 13.1287V17.3869C13.4731 17.6055 14.0249 17.6888 14.1915 17.6055Z" fill="#0079C1"/>
+                                        </svg>                                                                                      
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0);">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7787 30.7595C24.1851 30.7595 31 23.9447 31 15.5382C31 7.1317 24.1851 0.316895 15.7787 0.316895C7.37218 0.316895 0.557373 7.1317 0.557373 15.5382C0.557373 23.9447 7.37218 30.7595 15.7787 30.7595ZM9.39617 12.706H12.3009V22.1803H9.39617V12.706ZM10.8642 8.03134C11.204 8.02725 11.5374 8.12469 11.8216 8.31119C12.1057 8.4977 12.3278 8.76478 12.4592 9.07822C12.5907 9.39166 12.6257 9.73721 12.5596 10.0706C12.4935 10.404 12.3294 10.7101 12.0883 10.9497C11.8472 11.1893 11.5401 11.3515 11.2063 11.4156C10.8725 11.4796 10.5271 11.4425 10.2145 11.3091C9.90188 11.1757 9.63619 10.952 9.45146 10.6667C9.26672 10.3814 9.17134 10.0474 9.17753 9.70756C9.18298 9.26289 9.36275 8.83812 9.67818 8.52464C9.9936 8.21117 10.4195 8.03404 10.8642 8.03134ZM17.0171 12.7059H14.1852V22.1906H17.1316V17.5055C17.1316 16.2666 17.3711 15.0692 18.9015 15.0692C20.432 15.0692 20.432 16.5372 20.432 17.5784V22.1906H23.3367V16.9849C23.3367 14.4342 22.7849 12.4768 19.8073 12.4768C19.2488 12.4574 18.6952 12.5882 18.2045 12.8555C17.7137 13.1229 17.3036 13.5171 17.0171 13.9969V12.7059Z" fill="#0079C1"/>
+                                        </svg>                                                                                     
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-media-items mobile gap-3 m-t-6 align-items-center">
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30.0823 15.7977C30.079 12.9075 29.2537 10.0787 27.7039 7.6456C26.1541 5.21246 23.9447 3.27667 21.3366 2.067C18.7286 0.85733 15.831 0.424342 12.9862 0.819199C10.1415 1.21406 7.46846 2.42026 5.28312 4.29526C3.09778 6.17026 1.49144 8.63569 0.653911 11.4002C-0.183613 14.1647 -0.217308 17.1127 0.556813 19.8959C1.33093 22.679 2.88051 25.181 5.02242 27.1061C7.16434 29.0312 9.80905 30.2989 12.644 30.7596V20.1775H8.82715V15.7977H12.644V12.4843C12.644 8.69468 14.8971 6.59277 18.3333 6.59277C19.4606 6.6087 20.5851 6.70907 21.6975 6.89304V10.6206H19.7942C19.471 10.5776 19.1424 10.6081 18.8324 10.7099C18.5225 10.8116 18.2391 10.982 18.0032 11.2085C17.7673 11.435 17.5849 11.7118 17.4693 12.0186C17.3537 12.3254 17.308 12.6544 17.3354 12.9813V15.7977H21.5123L20.823 20.1775H17.3457V30.7596C20.8917 30.2019 24.1234 28.3882 26.4585 25.6451C28.7937 22.902 30.0788 19.4099 30.0823 15.7977Z" fill="#0079C1"/>
+                                    </svg>                                            
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3734 30.4426C23.7799 30.4426 30.5947 23.6278 30.5947 15.2213C30.5947 6.8148 23.7799 0 15.3734 0C6.9669 0 0.1521 6.8148 0.1521 15.2213C0.1521 23.6278 6.9669 30.4426 15.3734 30.4426ZM15.4465 10.8282C14.5737 10.8261 13.72 11.0835 12.9937 11.5675C12.2675 12.0516 11.7014 12.7405 11.3674 13.5469C11.0335 14.3532 10.9466 15.2407 11.1179 16.0965C11.2892 16.9523 11.7109 17.7379 12.3295 18.3536C12.9482 18.9693 13.7358 19.3873 14.5924 19.5545C15.449 19.7217 16.336 19.6307 17.1408 19.2928C17.9455 18.955 18.6318 18.3857 19.1124 17.6572C19.593 16.9286 19.8463 16.0737 19.8401 15.2009C19.8318 14.0401 19.3656 12.9295 18.5429 12.1107C17.7201 11.2918 16.6073 10.8309 15.4465 10.8282ZM15.4465 18.0432C14.888 18.0452 14.3415 17.8815 13.8762 17.5728C13.4108 17.264 13.0476 16.8241 12.8324 16.3087C12.6173 15.7933 12.5599 15.2257 12.6676 14.6777C12.7753 14.1297 13.0432 13.626 13.4373 13.2304C13.8315 12.8347 14.3342 12.565 14.8818 12.4553C15.4294 12.3456 15.9972 12.4008 16.5134 12.6141C17.0296 12.8273 17.4708 13.1889 17.7813 13.6531C18.0918 14.1173 18.2576 14.6633 18.2576 15.2217C18.2494 15.9638 17.9503 16.673 17.4246 17.1967C16.8989 17.7205 16.1886 18.017 15.4465 18.0224V18.0432ZM11.8129 24.1331H18.9342C20.3554 24.1303 21.7176 23.5645 22.7226 22.5596C23.7275 21.5546 24.2933 20.1924 24.296 18.7712V11.6395C24.2933 10.2183 23.7275 8.85613 22.7226 7.85119C21.7176 6.84625 20.3554 6.28046 18.9342 6.27771H11.8129C10.3917 6.28046 9.02953 6.84625 8.02459 7.85119C7.01965 8.85613 6.45386 10.2183 6.45111 11.6395V18.7712C6.45386 20.1924 7.01965 21.5546 8.02459 22.5596C9.02953 23.5645 10.3917 24.1303 11.8129 24.1331ZM9.20985 9.03645C9.90043 8.34586 10.8363 7.95667 11.8129 7.95393H18.9342C19.9109 7.95667 20.8467 8.34586 21.5373 9.03645C22.2279 9.72704 22.6171 10.6629 22.6198 11.6395V18.7712C22.6171 19.7469 22.2276 20.6817 21.5367 21.3706C20.8458 22.0596 19.9099 22.4464 18.9342 22.4464H11.8129C10.8372 22.4464 9.90137 22.0596 9.21049 21.3706C8.51961 20.6817 8.13008 19.7469 8.12733 18.7712V11.6395C8.13007 10.6629 8.51926 9.72704 9.20985 9.03645Z" fill="#0079C1"/>
+                                    </svg>                                              
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_29_1654)">
+                                        <path d="M8.56604 7.94238L19.4522 22.4979H21.9174L11.0313 7.94238H8.56604Z" fill="#0079C1"/>
+                                        <path d="M15.22 0C6.81415 0 0 6.81415 0 15.22C0 23.6259 6.81415 30.44 15.22 30.44C23.6259 30.44 30.44 23.6259 30.44 15.22C30.44 6.81415 23.6259 0 15.22 0ZM18.8706 23.6594L13.9141 17.0326L7.77979 23.6594H6.20279L13.2094 16.0904L6.24723 6.78057H11.6136L16.1783 12.8839L21.8276 6.78057H23.4046L16.883 13.8262L24.2375 23.6594H18.8712H18.8706Z" fill="#0079C1"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_29_1654">
+                                        <rect width="30.44" height="30.44" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                            
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9224 15.2213C30.9224 23.6278 24.1076 30.4426 15.7011 30.4426C7.29466 30.4426 0.479858 23.6278 0.479858 15.2213C0.479858 6.8148 7.29466 0 15.7011 0C24.1076 0 30.9224 6.8148 30.9224 15.2213ZM22.7828 10.4197C23.4682 11.105 23.8532 12.0345 23.8532 13.0037V17.3556C23.8532 17.8355 23.7587 18.3107 23.575 18.7541C23.3914 19.1975 23.1222 19.6003 22.7828 19.9397C22.4435 20.279 22.0407 20.5482 21.5973 20.7318C21.1539 20.9155 20.6787 21.01 20.1988 21.01H10.8287C10.3488 21.01 9.87358 20.9155 9.43021 20.7318C8.98684 20.5482 8.58399 20.279 8.24465 19.9397C7.90531 19.6003 7.63613 19.1975 7.45248 18.7541C7.26884 18.3107 7.17431 17.8355 7.17431 17.3556V13.0037C7.17431 12.0345 7.55932 11.105 8.24465 10.4197C8.92997 9.73437 9.85947 9.34936 10.8287 9.34936H20.1988C21.168 9.34936 22.0975 9.73437 22.7828 10.4197ZM14.1915 17.6055L18.356 15.5233C18.5226 15.4191 18.3456 15.1693 18.2103 15.0964L14.1915 12.91C14.0353 12.8163 13.4731 12.9413 13.4731 13.1287V17.3869C13.4731 17.6055 14.0249 17.6888 14.1915 17.6055Z" fill="#0079C1"/>
+                                    </svg>                                                                                      
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7787 30.7595C24.1851 30.7595 31 23.9447 31 15.5382C31 7.1317 24.1851 0.316895 15.7787 0.316895C7.37218 0.316895 0.557373 7.1317 0.557373 15.5382C0.557373 23.9447 7.37218 30.7595 15.7787 30.7595ZM9.39617 12.706H12.3009V22.1803H9.39617V12.706ZM10.8642 8.03134C11.204 8.02725 11.5374 8.12469 11.8216 8.31119C12.1057 8.4977 12.3278 8.76478 12.4592 9.07822C12.5907 9.39166 12.6257 9.73721 12.5596 10.0706C12.4935 10.404 12.3294 10.7101 12.0883 10.9497C11.8472 11.1893 11.5401 11.3515 11.2063 11.4156C10.8725 11.4796 10.5271 11.4425 10.2145 11.3091C9.90188 11.1757 9.63619 10.952 9.45146 10.6667C9.26672 10.3814 9.17134 10.0474 9.17753 9.70756C9.18298 9.26289 9.36275 8.83812 9.67818 8.52464C9.9936 8.21117 10.4195 8.03404 10.8642 8.03134ZM17.0171 12.7059H14.1852V22.1906H17.1316V17.5055C17.1316 16.2666 17.3711 15.0692 18.9015 15.0692C20.432 15.0692 20.432 16.5372 20.432 17.5784V22.1906H23.3367V16.9849C23.3367 14.4342 22.7849 12.4768 19.8073 12.4768C19.2488 12.4574 18.6952 12.5882 18.2045 12.8555C17.7137 13.1229 17.3036 13.5171 17.0171 13.9969V12.7059Z" fill="#0079C1"/>
+                                    </svg>                                                                                     
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-list-wrap">
+                        <div class="footer-list">
+                            <div class="heading-3 color-primary bottom-line sm position-relative dark">
+                                <h3>KEŞFET</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">hakkımızda</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">Tarihçe</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">İş Ortakları</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">S.S.S</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">Kariyer</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">haberler</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">referanslar</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">Müşteri Görüşleri</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">iletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list">
+                            <div class="heading-3 color-primary bottom-line sm position-relative dark">
+                                <h3>ÜRÜNLER</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">inka.net</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">e-performans</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">anketEvi</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">talentPayroll</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">Feed-Back</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-list">
+                            <div class="heading-3 color-primary bottom-line sm position-relative dark">
+                                <h3>YASAL BİLGİ</h3>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">çerez politikası</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">kullanım koşulları</a>
+                                </li>
+                                <li>
+                                    <a class="color-secondary" href="javascript:void(0);">gizlilik politikası</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="divider"></section>
+    <div class="container">
+        <div class="footer-bottom-span">
+            <span>
+                © 2024 Tüm hakları saklıdır.
+            </span>
+        </div>
+    </div>
+</footer>
+
+  
+</body>
+</html>

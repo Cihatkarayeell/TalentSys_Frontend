@@ -1,0 +1,76 @@
+.search-result{
+    width: 100%;
+    margin-bottom: 15rem;
+    padding-top: 8.8rem;
+    @include mini{
+        padding-top: 4.2rem;
+        margin-bottom: 10rem;
+    }
+    .title{
+        font-size: 2rem;
+        line-height: 2.4rem;
+        @include light;
+        color: #000000;
+        strong{
+            @include medium;
+        }
+        margin-bottom: 3.9rem;
+        margin-top: 7.1rem;
+        @include mini{
+            margin-top: 4rem;
+        }
+    }
+    .accordion{
+        .accordion-item{
+            border: none;
+            border-bottom: .1rem solid #C8BAAF;
+            padding-top: 1.6rem;
+            padding-bottom: 1.2rem;
+            &:first-of-type{
+                border-top: .1rem solid #C8BAAF;
+            }
+            .accordion-button{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                @include medium;
+                color: #000000;
+                box-shadow: none;
+                padding-left: 0;
+                padding-right: 0;
+                padding: 0;
+                background: transparent;
+                position: relative;
+                &:after{
+                    display: none;
+                }
+                .icon{
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: transform 400ms ease;
+                }
+                &:not(.collapsed){
+                    .icon{
+                        transform: translateY(-50%) rotate(90deg);
+                    }
+                }
+            }
+            .accordion-body{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: var(--color-secondary);
+                @include light;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+                padding-bottom: 1.3rem;
+                a{
+                    color: var(--color-primary);
+                    text-decoration: underline;
+                    padding-top: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+// Küçük cihazlar
+@mixin mini {
+  // 414px ve aşağısı
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+// XSMALL
+@mixin xs {
+  // 767px ve aşağısı
+  @media (max-width: ($screen-sm - 1px)) {
+    @content;
+  }
+}
+
+//SMALL
+@mixin sm {
+  // 768px ve aşağısı
+  @media (max-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin bigger-than-sm {
+  // 768px ve yukarısı
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin sm-md {
+  // 768px ile 1024px arası
+  @media (min-width: $screen-sm) and (max-width: ($screen-md - 1px)) {
+    @content;
+  }
+}
+
+@mixin bigger-than-md {
+  // 1024px ve yukarısı
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin md {
+  // 1024px ve aşağısı
+  @media (max-width: ($screen-md - 1px)) {
+    @content;
+  }
+}
+
+@mixin md-lg {
+  // 1024px ile 1139px arası
+  @media (min-width: $screen-md) and (max-width: ($screen-lg - 1px)) {
+    @content;
+  }
+}
+
+//LARGE
+@mixin smaller-than-lg {
+  // 1139px ve aşağısı
+  @media (max-width: ($screen-lg - 1px)) {
+    @content;
+  }
+}
+
+@mixin bigger-than-xl {
+  // 1140px ve yukarısı
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin lg {
+  // 1140px ve aşağısı
+  @media (max-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin lg-xl {
+  // 1140px ile 1440px arası
+  @media (min-width: $screen-lg) and (max-width: ($screen-xl - 1px)) {
+    @content;
+  }
+}
+
+//XLARGE
+@mixin smaller-than-xl {
+  // 1439px ve aşağısı
+  @media (max-width: ($screen-xl - 1px)) {
+    @content;
+  }
+}
+
+@mixin bigger-than-xl {
+  // 1440px ve yukarısı
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin xl {
+  // 1440px ve aşağısı
+  @media (max-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin bigger-than-xxl {
+  // 1440px ve yukarısı
+  @media (min-width: $screen-xxl) {
+    @content;
+  }
+}

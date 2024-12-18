@@ -1,0 +1,170 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<section>
+    <div class="container">
+        <div class="position-relative w-100 h-100">
+            <a href="#" class="top-button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="3" fill="#3B3B3B" fill-opacity="0.2"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1579 12.6798H10V11H30.1579V12.6798ZM20.0437 14.3731L27.576 21.9054L26.3884 23.0931L20.8836 17.5883V31H19.2038V17.5883L13.6956 23.0931L12.508 21.9054L20.0437 14.3731Z" fill="white"/>
+                </svg>                    
+            </a>
+        </div>
+    </div>
+</section>
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        <div class="icon">
+            <img src="./img/icon/modal-icon.svg" alt="">
+        </div>
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Your message has been successfully sent. We will contact you very soon!
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="./img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<section class="hero" id="business-hero">
+    <div class="hero-backdrop" style="background: url(./img/background/business-hero.png);background-position: center;background-size: cover; background-repeat: no-repeat;">
+        <div class="hero-bottom-block">
+            <div class="text">
+                <div class="brand-text">
+                    <span>TalentSys</span>
+                    <span>|</span>
+                    <span>1990'dan beri...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Kurumsal</a>
+              </li>
+              <span>
+                |
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">İş Ortakları</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<section class="business-block" id="business-block">
+    <div class="container">
+        <div class="heading-1 w-max bottom-line position-relative light md m-b-3 color-primary-linear">
+            <h1>İş Ortakları</h1>
+        </div>
+        <div class="block-wrap">
+            <div class="title">
+                <h2>TalentSys, alanında en iyiler ile iş ortağıdır.</h2>
+            </div>
+            <div class="partners">
+                <div class="partner-item">
+                    <div class="brand-img">
+                        <img src="./img/logo/microsoft.svg" alt="">
+                    </div>
+                    <div class="text-card">
+                        <div class="card-title">
+                            <h2>Microsoft</h2>
+                        </div>
+                        <div class="card-desc">
+                            <p>TalentSys çözümlerini Microsoft platformlarında geliştirmektedir ve Microsoft iş ortağıdır.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-item">
+                    <div class="brand-img">
+                        <img src="./img/logo/insan-gucu.svg" alt="">
+                    </div>
+                    <div class="text-card">
+                        <div class="card-title">
+                            <h2>İnsan Gücü</h2>
+                        </div>
+                        <div class="card-desc">
+                            <p>TalentSys ile İnsanGücü Danışmanlık güç birliğine gitti ve yeni bordro hizmeti ile mevzuat Danışmanlığı hizmetimiz başladı. TalentPayroll markası ile yola çıkılan bu hizmetimizde yazılımlarımızın kullanıcılara sunduğu pek çok avantajın yanında İnsanGücü’nün güçlü uygulama deneyimi ve mevzuat hâkimiyeti ile vereceği danışmanlık birleşti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter m-b-9">
+    <div class="container"> 
+        <div class="newsletter-block">
+            <div class="header">
+                <div class="title heading-2 bottom-line md light position-relative m-b-3">
+                    <h2>
+                        Bültenimize Katılın
+                    </h2>
+                </div>
+                <div class="subtitle">Hemen bültenimize abone olun, en yeni haber ve etkinlikleri ilk siz keşfedin!</div>
+            </div>
+            <form action="#" class="form-element">
+                <div class="input-layout form-element">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Adın">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="surname" placeholder="Soyadı">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="mail" id="mail" placeholder="E-Posta">
+                        <div class="input-badge">Lütfen boş bırakmayın!</div>
+                    </div>
+                    <div class="submit-button">
+                        <button>KAYIT OL</button>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <a href="javascipt:();" class="checkbox-item">
+                        <input type="checkbox" id="gdpr">
+                        <div class="box">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                            </svg>                            
+                        </div>
+                        <label for="gdpr">Kullanım Koşullarını okudum ve kabul ediyorum.</label>
+                    </a>
+                    <a href="javascript:void(0);" class="checkbox-item">
+                        <input type="checkbox" id="privacy">
+                        <div class="box">
+                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                            </svg>                            
+                        </div>
+                        <label for="privacy">Gizlilik Politikasını okudum ve kabul ediyorum.</label>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
